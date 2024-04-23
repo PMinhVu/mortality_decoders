@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px 0;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 100;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+        font-weight: 550;
+    }
+}
+
+.active {
+    font-weight: 550;
+}
