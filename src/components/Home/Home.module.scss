@@ -1,3 +1,49 @@
-.container{
-    padding-top: 120px;
+.container {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.filtration {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.indicator select,
+.country select {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.worldMap {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.worldMap svg {
+    height: 100%;
+}
+
+.reset {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border-width: 1px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
 }
