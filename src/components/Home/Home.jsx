@@ -84,8 +84,8 @@ const Home = () => {
 
     useEffect(() => {
         // Width and height settings for the SVG
-        const width = 1000;
-        const height = 450;
+        const width = 800;
+        const height = 400;
 
         // Create SVG element and append it to ref'd div
         const svg = d3.select(svgRef.current).attr('viewBox', [0, 0, width, height]);
@@ -167,7 +167,7 @@ const Home = () => {
                 </div>
             </div>
             <div className={cx('worldMap')}>
-                <svg ref={svgRef} width={1000} height={500} />
+                <svg ref={svgRef} width={800} height={400} />
                 {isMapChange && (
                     <button className={cx('reset')} onClick={handleResetMap}>
                         Reset

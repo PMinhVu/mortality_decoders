@@ -1,13 +1,15 @@
 .container {
-    padding-top: 70px;
+    padding-left: 300px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
+    justify-content: space-around;
+    gap: 100px;
+    height: 100vh;
 }
 
 .filtration {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 100px;
     margin-top: 30px;
@@ -26,10 +28,13 @@
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    height: 500px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
 }
 
 .worldMap svg {
+    width: 100%;
     height: 100%;
 }
 
