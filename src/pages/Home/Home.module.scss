@@ -17,7 +17,7 @@
 }
 
 .indicator select,
-.country select {
+.year select {
     font-size: 16px;
     padding: 5px;
     border-radius: 5px;
@@ -51,4 +51,8 @@
         cursor: pointer;
         opacity: 0.8;
     }
+}
+
+#tooltip {
+    height: 100px;
 }

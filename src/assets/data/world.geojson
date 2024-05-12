@@ -5538,7 +5538,7 @@
         },
         {
             "type": "Feature",
-            "properties": { "name": "Greenland" },
+            "properties": { "name": "Denmark" },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -12814,7 +12814,7 @@
         },
         {
             "type": "Feature",
-            "properties": { "name": "Vietnam" },
+            "properties": { "name": "VietNam" },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
