@@ -19,7 +19,7 @@ const PlainWorldMap = ({ year, indicator }) => {
             .geoMercator()
             .scale(90)
             .center([0, 20])
-            .translate([width / 2, height / 2]);
+            .translate([width / 1.85, height / 2]);
         const pathGenerator = d3.geoPath().projection(projection);
 
         // Define zoom behavior
@@ -37,28 +37,6 @@ const PlainWorldMap = ({ year, indicator }) => {
             .scaleThreshold()
             .domain([0.1, 0.5, 1.5, 3.5, 5, 8, 10, 30])
             .range(['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#084594', '#08306b']);
-
-        const legend = svg.append('g').attr('class', 'legend').attr('transform', 'translate(20, 20)'); // Adjust position to fit your layout
-        const legendItemSize = 20; // Height and width of the legend item
-        const legendSpacing = 4; // Space between items
-
-        colorScale.range().forEach((color, index) => {
-            const legendItem = legend
-                .append('g')
-                .attr('transform', `translate(0, ${index * (legendItemSize + legendSpacing)})`);
-
-            legendItem.append('rect').attr('width', legendItemSize).attr('height', legendItemSize).attr('fill', color);
-
-            legendItem
-                .append('text')
-                .attr('x', legendItemSize + 5) // Space text a bit from the rectangle
-                .attr('y', legendItemSize - legendSpacing) // Adjust text position to be more centered
-                .text(() => {
-                    if (index === 0) return `< ${colorScale.domain()[0]}`;
-                    if (index === colorScale.range().length - 1) return `≥ ${colorScale.domain()[index - 1]}`;
-                    return `${colorScale.domain()[index - 1]} - ${colorScale.domain()[index]}`;
-                });
-        });
 
         // Load and process data
         Promise.all([d3.json('src/assets/data/world.geojson'), d3.csv('src/assets/data/combined_dataset.csv')]).then(
@@ -96,11 +74,10 @@ const PlainWorldMap = ({ year, indicator }) => {
                             lowerBound: 0,
                             upperBound: 0,
                         };
-                        const tooltipHtml = `Country: <strong>${
-                            d.properties.name
-                        }</strong><br/>UN IGME estimate: ${data.obsValue.toLocaleString()}<br/>Uncertainty interval: (${data.lowerBound.toFixed(
-                            2,
-                        )}-${data.upperBound.toFixed(2)})`;
+                        const tooltipHtml = `Country: <strong>${d.properties.name
+                            }</strong><br/>UN IGME estimate: ${data.obsValue.toLocaleString()}<br/>Uncertainty interval: (${data.lowerBound.toFixed(
+                                2,
+                            )}-${data.upperBound.toFixed(2)})`;
                         d3.select('#tooltip')
                             .html(tooltipHtml)
                             .style('padding', '5px')
@@ -137,6 +114,47 @@ const PlainWorldMap = ({ year, indicator }) => {
                 // Reset zoom button
                 d3.select('#reset-zoom').on('click', () => {
                     svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
+                });
+
+                // Height and width of the legend item
+                const legendItemSize = 20;
+                const legendSpacing = 4; // Space between items
+
+                const legend = svg.append('g').attr('class', 'legend').attr('transform', 'translate(20, 20)');
+
+                legend
+                    .append('rect')
+                    .attr('x', -10)
+                    .attr('y', -10)
+                    .attr('width', 100)
+                    .attr('height', colorScale.range().length * (legendItemSize + legendSpacing) + 20) // Dynamic height calculation
+                    .attr('fill', 'white')
+                    .attr('stroke', 'black')
+                    .attr('stroke-width', 1)
+                    .attr('rx', 5)
+                    .attr('ry', 5);
+
+                // Adding legend items
+                colorScale.range().forEach((color, index) => {
+                    const legendItem = legend
+                        .append('g')
+                        .attr('transform', `translate(0, ${index * (legendItemSize + legendSpacing)})`);
+
+                    legendItem
+                        .append('rect')
+                        .attr('width', legendItemSize)
+                        .attr('height', legendItemSize)
+                        .attr('fill', color);
+
+                    legendItem
+                        .append('text')
+                        .attr('x', legendItemSize + 5) // Space text a bit from the rectangle
+                        .attr('y', legendItemSize - legendSpacing) // Adjust text position to be more centered
+                        .text(() => {
+                            if (index === 0) return `< ${colorScale.domain()[0]}`;
+                            if (index === colorScale.range().length - 1) return `≥ ${colorScale.domain()[index - 1]}`;
+                            return `${colorScale.domain()[index - 1]} - ${colorScale.domain()[index]}`;
+                        });
                 });
             },
         );
