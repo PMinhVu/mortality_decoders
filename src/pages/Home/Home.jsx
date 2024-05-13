@@ -2,7 +2,8 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
 import Header from '@components/Header/Header.jsx';
-import WorldMap from '@components/svgs/WorldMap.jsx';
+import SphereWorldMap from '@components/svgs/3DWorldMap.jsx';
+import PlainWorldMap from '@components/svgs/2DWorldMap.jsx';
 
 const cx = classNames.bind(styles);
 
@@ -91,7 +92,8 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <WorldMap year={selectedYear} indicator={selectedIndicator} />
+                {/* <SphereWorldMap year={selectedYear} indicator={selectedIndicator} /> */}
+                <PlainWorldMap year={selectedYear} indicator={selectedIndicator} />
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
 // eslint-disable-next-line react/prop-types
-const WorldMap = ({ year, indicator }) => {
+const PlainWorldMap = ({ year, indicator }) => {
     const svgRef = useRef();
     const zoomRef = useRef();
 
@@ -27,6 +27,28 @@ const WorldMap = ({ year, indicator }) => {
         const colorScale = d3.scaleThreshold()
             .domain([0.1, 0.5, 1.5, 3.5, 5, 8, 10, 30])
             .range(['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#084594', '#08306b']);
+
+        const legend = svg.append('g').attr('class', 'legend').attr('transform', 'translate(20, 20)'); // Adjust position to fit your layout
+        const legendItemSize = 20; // Height and width of the legend item
+        const legendSpacing = 4; // Space between items
+    
+            colorScale.range().forEach((color, index) => {
+                const legendItem = legend
+                    .append('g')
+                    .attr('transform', `translate(0, ${index * (legendItemSize + legendSpacing)})`);
+    
+                legendItem.append('rect').attr('width', legendItemSize).attr('height', legendItemSize).attr('fill', color);
+    
+                legendItem
+                    .append('text')
+                    .attr('x', legendItemSize + 5) // Space text a bit from the rectangle
+                    .attr('y', legendItemSize - legendSpacing) // Adjust text position to be more centered
+                    .text(() => {
+                        if (index === 0) return `< ${colorScale.domain()[0]}`;
+                        if (index === colorScale.range().length - 1) return `≥ ${colorScale.domain()[index - 1]}`;
+                        return `${colorScale.domain()[index - 1]} - ${colorScale.domain()[index]}`;
+                    });
+            });
 
         // Load and process data
         Promise.all([d3.json('src/assets/data/world.geojson'), d3.csv('src/assets/data/combined_dataset.csv')])
@@ -105,4 +127,4 @@ const WorldMap = ({ year, indicator }) => {
     );
 };
 
-export default WorldMap;
+export default PlainWorldMap;
