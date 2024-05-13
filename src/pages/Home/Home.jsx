@@ -31,22 +31,23 @@ const Indicators = [
 ];
 
 const Years = [
-    {id: 1, name: '2012', value: 2012.5},
-    {id: 2, name: '2013', value: 2013.5},
-    {id: 3, name: '2014', value: 2014.5},
-    {id: 4, name: '2015', value: 2015.5},
-    {id: 5, name: '2016', value: 2016.5},
-    {id: 6, name: '2017', value: 2017.5},
-    {id: 7, name: '2018', value: 2018.5},
-    {id: 8, name: '2019', value: 2019.5},
-    {id: 9, name: '2020', value: 2020.5},
-    {id: 10, name: '2021', value: 2021.5},
-    {id: 11, name: '2022', value: 2022.5}
-]
+    { id: 1, name: '2012', value: 2012.5 },
+    { id: 2, name: '2013', value: 2013.5 },
+    { id: 3, name: '2014', value: 2014.5 },
+    { id: 4, name: '2015', value: 2015.5 },
+    { id: 5, name: '2016', value: 2016.5 },
+    { id: 6, name: '2017', value: 2017.5 },
+    { id: 7, name: '2018', value: 2018.5 },
+    { id: 8, name: '2019', value: 2019.5 },
+    { id: 9, name: '2020', value: 2020.5 },
+    { id: 10, name: '2021', value: 2021.5 },
+    { id: 11, name: '2022', value: 2022.5 },
+];
 
 const Home = () => {
     const [selectedIndicator, setSelectedIndicator] = useState(Indicators[0].value);
     const [selectedYear, setSelectedYear] = useState(Years[0].value);
+    const [mapType, setMapType] = useState('2D');
 
     const handleIndicatorChange = (event) => {
         setSelectedIndicator(event.target.value);
@@ -56,18 +57,17 @@ const Home = () => {
         setSelectedYear(parseFloat(event.target.value));
     };
 
+    const handleMapTypeChange = (event) => {
+        setMapType(event.target.value);
+    };
+
     return (
         <div className={cx('container')}>
             {Header}
             <div className={cx('filtration')}>
                 <div className={cx('indicator')}>
                     <p>Select indicator</p>
-                    <select
-                        name=""
-                        id="indicator"
-                        value={selectedIndicator}
-                        onChange={handleIndicatorChange}
-                    >
+                    <select name="" id="indicator" value={selectedIndicator} onChange={handleIndicatorChange}>
                         {Indicators.map((indicator, index) => (
                             <option key={index} value={indicator.value}>
                                 {indicator.value}
@@ -77,12 +77,7 @@ const Home = () => {
                 </div>
                 <div className={cx('year')}>
                     <p>Select year</p>
-                    <select
-                        name=""
-                        id="year"
-                        value={selectedYear}
-                        onChange={handleYearChange}
-                    >
+                    <select name="" id="year" value={selectedYear} onChange={handleYearChange}>
                         {Years.map((year, index) => (
                             <option key={index} value={year.value}>
                                 {year.name}
@@ -90,10 +85,20 @@ const Home = () => {
                         ))}
                     </select>
                 </div>
+                <div className={cx('mapType')}>
+                    <p>Select map type</p>
+                    <select name="" id="" onChange={handleMapTypeChange}>
+                        <option value="2D">2D</option>
+                        <option value="3D">3D</option>
+                    </select>
+                </div>
             </div>
             <div>
-                {/* <SphereWorldMap year={selectedYear} indicator={selectedIndicator} /> */}
-                <PlainWorldMap year={selectedYear} indicator={selectedIndicator} />
+                {mapType === '2D' ? (
+                    <PlainWorldMap year={selectedYear} indicator={selectedIndicator} />
+                ) : (
+                    <SphereWorldMap year={selectedYear} indicator={selectedIndicator} />
+                )}
             </div>
         </div>
     );

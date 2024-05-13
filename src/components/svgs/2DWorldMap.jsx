@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
+import '../../GlobalStyle.css';
 
 // eslint-disable-next-line react/prop-types
 const PlainWorldMap = ({ year, indicator }) => {
@@ -13,51 +14,63 @@ const PlainWorldMap = ({ year, indicator }) => {
         svg.attr('width', width).attr('height', height);
 
         // Projection and path generator setup
-        const projection = d3.geoMercator().scale(90).center([0, 20]).translate([width / 2, height / 2]);
+        const projection = d3
+            .geoMercator()
+            .scale(90)
+            .center([0, 20])
+            .translate([width / 2, height / 2]);
         const pathGenerator = d3.geoPath().projection(projection);
 
         // Define zoom behavior
-        const zoom = d3.zoom().scaleExtent([1, 8]).on('zoom', (event) => {
-            svg.selectAll('path').attr('transform', event.transform);
-        });
+        const zoom = d3
+            .zoom()
+            .scaleExtent([1, 8])
+            .on('zoom', (event) => {
+                svg.selectAll('path').attr('transform', event.transform);
+            });
         zoomRef.current = zoom;
         svg.call(zoom);
 
         // Define the color scale
-        const colorScale = d3.scaleThreshold()
+        const colorScale = d3
+            .scaleThreshold()
             .domain([0.1, 0.5, 1.5, 3.5, 5, 8, 10, 30])
             .range(['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#084594', '#08306b']);
 
         const legend = svg.append('g').attr('class', 'legend').attr('transform', 'translate(20, 20)'); // Adjust position to fit your layout
         const legendItemSize = 20; // Height and width of the legend item
         const legendSpacing = 4; // Space between items
-    
-            colorScale.range().forEach((color, index) => {
-                const legendItem = legend
-                    .append('g')
-                    .attr('transform', `translate(0, ${index * (legendItemSize + legendSpacing)})`);
-    
-                legendItem.append('rect').attr('width', legendItemSize).attr('height', legendItemSize).attr('fill', color);
-    
-                legendItem
-                    .append('text')
-                    .attr('x', legendItemSize + 5) // Space text a bit from the rectangle
-                    .attr('y', legendItemSize - legendSpacing) // Adjust text position to be more centered
-                    .text(() => {
-                        if (index === 0) return `< ${colorScale.domain()[0]}`;
-                        if (index === colorScale.range().length - 1) return `≥ ${colorScale.domain()[index - 1]}`;
-                        return `${colorScale.domain()[index - 1]} - ${colorScale.domain()[index]}`;
-                    });
-            });
+
+        colorScale.range().forEach((color, index) => {
+            const legendItem = legend
+                .append('g')
+                .attr('transform', `translate(0, ${index * (legendItemSize + legendSpacing)})`);
+
+            legendItem.append('rect').attr('width', legendItemSize).attr('height', legendItemSize).attr('fill', color);
+
+            legendItem
+                .append('text')
+                .attr('x', legendItemSize + 5) // Space text a bit from the rectangle
+                .attr('y', legendItemSize - legendSpacing) // Adjust text position to be more centered
+                .text(() => {
+                    if (index === 0) return `< ${colorScale.domain()[0]}`;
+                    if (index === colorScale.range().length - 1) return `≥ ${colorScale.domain()[index - 1]}`;
+                    return `${colorScale.domain()[index - 1]} - ${colorScale.domain()[index]}`;
+                });
+        });
 
         // Load and process data
-        Promise.all([d3.json('src/assets/data/world.geojson'), d3.csv('src/assets/data/combined_dataset.csv')])
-            .then(([topo, moralityData]) => {
-                const filteredMoralityData = moralityData.filter(d => +d.REF_DATE === year && d.Indicator === indicator);
-                const moralityByArea = new Map(filteredMoralityData.map(d => [
-                    d.Area,
-                    { obsValue: +d.OBS_VALUE, lowerBound: +d.LOWER_BOUND, upperBound: +d.UPPER_BOUND },
-                ]));
+        Promise.all([d3.json('src/assets/data/world.geojson'), d3.csv('src/assets/data/combined_dataset.csv')]).then(
+            ([topo, moralityData]) => {
+                const filteredMoralityData = moralityData.filter(
+                    (d) => +d.REF_DATE === year && d.Indicator === indicator,
+                );
+                const moralityByArea = new Map(
+                    filteredMoralityData.map((d) => [
+                        d.Area,
+                        { obsValue: +d.OBS_VALUE, lowerBound: +d.LOWER_BOUND, upperBound: +d.UPPER_BOUND },
+                    ]),
+                );
 
                 // Draw the map
                 svg.selectAll('.country').remove();
@@ -65,20 +78,30 @@ const PlainWorldMap = ({ year, indicator }) => {
                     .attr('class', 'country')
                     .selectAll('path')
                     .data(topo.features)
-                    .enter().append('path')
+                    .enter()
+                    .append('path')
                     .attr('d', pathGenerator)
-                    .attr('fill', d => {
+                    .attr('fill', (d) => {
                         const data = moralityByArea.get(d.properties.name);
                         return colorScale(data ? data.obsValue : 0);
                     })
                     .style('stroke', 'white')
                     .style('opacity', 0.8)
-                    .on('mouseover', function(event, d) {
+                    .on('mouseover', function (event, d) {
                         d3.select(this).style('stroke', 'black').raise(); // Highlight and bring to front
                         // Tooltip setup
-                        const data = moralityByArea.get(d.properties.name) || { obsValue: 0, lowerBound: 0, upperBound: 0 };
-                        const tooltipHtml = `Country: <strong>${d.properties.name}</strong><br/>UN IGME estimate: ${data.obsValue.toLocaleString()}<br/>Uncertainty interval: (${data.lowerBound.toFixed(2)}-${data.upperBound.toFixed(2)})`;
-                        d3.select('#tooltip').html(tooltipHtml)
+                        const data = moralityByArea.get(d.properties.name) || {
+                            obsValue: 0,
+                            lowerBound: 0,
+                            upperBound: 0,
+                        };
+                        const tooltipHtml = `Country: <strong>${
+                            d.properties.name
+                        }</strong><br/>UN IGME estimate: ${data.obsValue.toLocaleString()}<br/>Uncertainty interval: (${data.lowerBound.toFixed(
+                            2,
+                        )}-${data.upperBound.toFixed(2)})`;
+                        d3.select('#tooltip')
+                            .html(tooltipHtml)
                             .style('padding', '5px')
                             .style('background', 'lightsteelblue')
                             .style('border', '0px')
@@ -88,14 +111,14 @@ const PlainWorldMap = ({ year, indicator }) => {
                             .style('top', `${event.pageY + 10}px`)
                             .style('opacity', 1);
                     })
-                    .on('mouseout', function() {
+                    .on('mouseout', function () {
                         d3.select(this).style('stroke', 'white');
                         d3.select('#tooltip').style('opacity', 0);
                     });
 
                 // Zoom to Vietnam functionality
                 d3.select('#zoom-to-vietnam').on('click', () => {
-                    const vietnam = topo.features.find(d => d.properties.name === 'VietNam');
+                    const vietnam = topo.features.find((d) => d.properties.name === 'VietNam');
                     if (vietnam) {
                         const bounds = pathGenerator.bounds(vietnam);
                         const dx = bounds[1][0] - bounds[0][0];
@@ -114,16 +137,17 @@ const PlainWorldMap = ({ year, indicator }) => {
                 d3.select('#reset-zoom').on('click', () => {
                     svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
                 });
-            });
-    }, [year, indicator]);  // Dependency array to re-run effect on change
+            },
+        );
+    }, [year, indicator]); // Dependency array to re-run effect on change
 
     return (
-        <>
+        <div>
             <svg ref={svgRef}></svg>
             <button id="zoom-to-vietnam">Zoom to Vietnam</button>
             <button id="reset-zoom">Reset Zoom</button>
             <div id="tooltip" style={{ position: 'absolute', opacity: 0 }}></div>
-        </>
+        </div>
     );
 };
 
