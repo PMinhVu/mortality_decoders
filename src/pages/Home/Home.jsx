@@ -66,7 +66,7 @@ const Home = () => {
             {Header}
             <div className={cx('filtration')}>
                 <div className={cx('indicator')}>
-                    <p>Select indicator</p>
+                    <h3>Select indicator</h3>
                     <select name="" id="indicator" value={selectedIndicator} onChange={handleIndicatorChange}>
                         {Indicators.map((indicator, index) => (
                             <option key={index} value={indicator.value}>
@@ -76,7 +76,7 @@ const Home = () => {
                     </select>
                 </div>
                 <div className={cx('year')}>
-                    <p>Select year</p>
+                    <h3>Select year</h3>
                     <select name="" id="year" value={selectedYear} onChange={handleYearChange}>
                         {Years.map((year, index) => (
                             <option key={index} value={year.value}>
@@ -86,7 +86,7 @@ const Home = () => {
                     </select>
                 </div>
                 <div className={cx('mapType')}>
-                    <p>Select map type</p>
+                    <h3>Select map type</h3>
                     <select name="" id="" onChange={handleMapTypeChange}>
                         <option value="2D">2D</option>
                         <option value="3D">3D</option>

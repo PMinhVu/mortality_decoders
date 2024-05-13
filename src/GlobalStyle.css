@@ -8,3 +8,8 @@ button {
     font-size: 14px;
     padding: 5px 10px;
 }
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
+import '../../GlobalStyle.css';
+import { CiZoomIn, CiZoomOut } from 'react-icons/ci';
+import { LuRotate3D, LuPauseCircle } from 'react-icons/lu';
 
 // eslint-disable-next-line react/prop-types
 const SphereWorldMap = ({ year, indicator }) => {
@@ -230,13 +233,47 @@ const SphereWorldMap = ({ year, indicator }) => {
     }, [year, indicator, isRotating]); // Dependency array to re-run effect on change
 
     return (
-        <>
-            <svg ref={svgRef}></svg>
-            <button id="zoom-to-vietnam">Zoom to Vietnam</button>
-            <button id="automatic-to-rotate"> {!isRotating ? ' Rotate ' : ' Pause '} </button>
-            <button id="reset-zoom">Reset Zoom</button>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px' }}>
+            <div style={{ border: '2px solid #000', borderRadius: '10px' }}>
+                <svg ref={svgRef}></svg>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '30px' }}>
+                <button
+                    id="zoom-to-vietnam"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
+                >
+                    <CiZoomIn style={{ fontSize: '18px' }} />
+                    Zoom to Vietnam
+                </button>
+
+                {!isRotating ? (
+                    <button
+                        id="automatic-to-rotate"
+                        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
+                    >
+                        <LuRotate3D style={{ fontSize: '18px' }} />
+                        Rotate
+                    </button>
+                ) : (
+                    <button
+                        id="automatic-to-rotate"
+                        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
+                    >
+                        <LuPauseCircle style={{ fontSize: '18px' }} />
+                        Pause
+                    </button>
+                )}
+
+                <button
+                    id="reset-zoom"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
+                >
+                    <CiZoomOut style={{ fontSize: '18px' }} />
+                    Reset Zoom
+                </button>
+            </div>
             <div id="tooltip" style={{ position: 'absolute', opacity: 0 }}></div>
-        </>
+        </div>
     );
 };
 
