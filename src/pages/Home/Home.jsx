@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
-import Header from '@components/Header/Header.jsx';
+import Sidebar from '@components/Sidebar/Sidebar.jsx';
 import SphereWorldMap from '@components/svgs/3DWorldMap.jsx';
 import PlainWorldMap from '@components/svgs/2DWorldMap.jsx';
 
@@ -63,7 +63,6 @@ const Home = () => {
 
     return (
         <div className={cx('container')}>
-            {Header}
             <div className={cx('filtration')}>
                 <div className={cx('indicator')}>
                     <h3>Select indicator</h3>
