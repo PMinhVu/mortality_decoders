@@ -48,7 +48,7 @@ const Home = () => {
     const [selectedIndicator, setSelectedIndicator] = useState(Indicators[0].value);
     const [selectedYear, setSelectedYear] = useState(Years[0].value);
     const [mapType, setMapType] = useState('2D');
-    const [country, setCountry] = useState('');
+    const [country, setCountry] = useState('Afghanistan');
     const [countries, setCountries] = useState([]);
 
     const handleIndicatorChange = (event) => {
