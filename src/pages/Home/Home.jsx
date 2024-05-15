@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
 import SphereWorldMap from '@components/svgs/3DWorldMap.jsx';
 import PlainWorldMap from '@components/svgs/2DWorldMap.jsx';
+import * as d3 from 'd3';
 
 const cx = classNames.bind(styles);
 
@@ -47,6 +48,8 @@ const Home = () => {
     const [selectedIndicator, setSelectedIndicator] = useState(Indicators[0].value);
     const [selectedYear, setSelectedYear] = useState(Years[0].value);
     const [mapType, setMapType] = useState('2D');
+    const [country, setCountry] = useState('');
+    const [countries, setCountries] = useState([]);
 
     const handleIndicatorChange = (event) => {
         setSelectedIndicator(event.target.value);
@@ -59,6 +62,17 @@ const Home = () => {
     const handleMapTypeChange = (event) => {
         setMapType(event.target.value);
     };
+
+    const handleCountryChange = (event) => {
+        setCountry(event.target.value);
+    };
+
+    useEffect(() => {
+        d3.csv('src/assets/data/combined_dataset.csv').then((data) => {
+            const uniqueCountries = Array.from(new Set(data.map((d) => d.Area)));
+            setCountries(uniqueCountries);
+        });
+    }, []);
 
     return (
         <div className={cx('container')}>
@@ -90,12 +104,20 @@ const Home = () => {
                         <option value="3D">3D</option>
                     </select>
                 </div>
+                <div className={cx('country')}>
+                    <h3>Select Country</h3>
+                    <select value={country} onChange={handleCountryChange}>
+                        {countries.map(country => (
+                            <option key={country} value={country}>{country}</option>
+                        ))}
+                    </select>
+                </div>
             </div>
             <div>
                 {mapType === '2D' ? (
-                    <PlainWorldMap year={selectedYear} indicator={selectedIndicator} />
+                    <PlainWorldMap country={country} year={selectedYear} indicator={selectedIndicator} />
                 ) : (
-                    <SphereWorldMap year={selectedYear} indicator={selectedIndicator} />
+                    <SphereWorldMap country={country} year={selectedYear} indicator={selectedIndicator} />
                 )}
             </div>
         </div>

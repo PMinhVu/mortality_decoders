@@ -5,7 +5,7 @@ import { CiZoomIn, CiZoomOut } from 'react-icons/ci';
 import { LuRotate3D, LuPauseCircle } from 'react-icons/lu';
 
 // eslint-disable-next-line react/prop-types
-const SphereWorldMap = ({ year, indicator }) => {
+const SphereWorldMap = ({ country, year, indicator }) => {
     const svgRef = useRef();
     const zoomRef = useRef();
     const [isRotating, setIsRotating] = useState(false);
@@ -74,8 +74,7 @@ const SphereWorldMap = ({ year, indicator }) => {
             .attr('stroke-width', '0.2')
             .attr('cx', width / 2)
             .attr('cy', height / 2)
-            .attr('r', projection.scale())
-            .select('#zoom-to-vietnam');
+            .attr('r', projection.scale());
 
         // Load and process data
         Promise.all([d3.json('src/assets/data/world.geojson'), d3.csv('src/assets/data/combined_dataset.csv')]).then(
@@ -113,10 +112,7 @@ const SphereWorldMap = ({ year, indicator }) => {
                             lowerBound: 0,
                             upperBound: 0,
                         };
-                        const tooltipHtml = `Country: <strong>${d.properties.name
-                            }</strong><br/>UN IGME estimate: ${data.obsValue.toLocaleString()}<br/>Uncertainty interval: (${data.lowerBound.toFixed(
-                                2,
-                            )}-${data.upperBound.toFixed(2)})`;
+                        const tooltipHtml = `Country: <strong>${d.properties.name}</strong><br/>UN IGME estimate: ${data.obsValue.toLocaleString()}<br/>Uncertainty interval: (${data.lowerBound.toFixed(2)}-${data.upperBound.toFixed(2)})`;
                         d3.select('#tooltip')
                             .html(tooltipHtml)
                             .style('padding', '5px')
@@ -131,25 +127,14 @@ const SphereWorldMap = ({ year, indicator }) => {
                     .on('mouseout', function () {
                         d3.select(this).style('stroke', 'white');
                         d3.select('#tooltip').style('opacity', 0);
-                    })
+                    });
 
-                    .call(
-                        d3.drag().on('drag', (event) => {
-                            console.log('Dragging', event.dx, event.dy); // Check the values being received
-                            const rotate = projection.rotate();
-                            const k = sensitivity / projection.scale();
-                            const newRotation = [rotate[0] + event.dx * k, rotate[1] - event.dy * k];
-                            projection.rotate(newRotation);
-                            svg.selectAll('path').attr('d', pathGenerator);
-                        }),
-                    );
-
-                // Zoom to Vietnam functionality
-                d3.select('#zoom-to-vietnam').on('click', () => {
-                    const vietnam = topo.features.find((d) => d.properties.name === 'VietNam');
-                    if (vietnam) {
-                        // Calculate the centroid of the Vietnam feature
-                        const centroid = d3.geoCentroid(vietnam);
+                // Function to zoom to a specific country
+                const zoomToCountry = (countryName) => {
+                    const selectedCountry = topo.features.find((d) => d.properties.name === countryName);
+                    if (selectedCountry) {
+                        // Calculate the centroid of the selected country feature
+                        const centroid = d3.geoCentroid(selectedCountry);
                         // Calculate the rotation needed to center the projection on the centroid
                         const rotate = projection.rotate();
                         const newRotation = [-centroid[0], -centroid[1]];
@@ -166,7 +151,7 @@ const SphereWorldMap = ({ year, indicator }) => {
                             })
                             .on('end', () => {
                                 // Once rotation is finished, calculate the bounds and apply the zoom
-                                const bounds = pathGenerator.bounds(vietnam);
+                                const bounds = pathGenerator.bounds(selectedCountry);
                                 const dx = bounds[1][0] - bounds[0][0];
                                 const dy = bounds[1][1] - bounds[0][1];
                                 const x = (bounds[0][0] + bounds[1][0]) / 2;
@@ -180,12 +165,25 @@ const SphereWorldMap = ({ year, indicator }) => {
                                         zoom.transform,
                                         d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale),
                                     );
-                                rotationTimerRef.current.stop();
+                                if (rotationTimerRef.current) {
+                                    rotationTimerRef.current.stop();
+                                }
                                 setIsRotating(false);
                             });
                     }
+                };
+
+                // Attach zoom to Vietnam functionality
+                d3.select('#zoom-to-vietnam').on('click', () => {
+                    zoomToCountry('VietNam');
                 });
 
+                // Attach zoom to selected country functionality
+                d3.select('#zoom-to-selected-country').on('click', () => {
+                    zoomToCountry(country);
+                });
+
+                // Automatic rotation functionality
                 d3.select('#automatic-to-rotate').on('click', () => {
                     if (!isRotating) {
                         rotationTimerRef.current = d3.timer(function () {
@@ -196,7 +194,9 @@ const SphereWorldMap = ({ year, indicator }) => {
                         }, 200);
                         setIsRotating(true);
                     } else {
-                        rotationTimerRef.current.stop();
+                        if (rotationTimerRef.current) {
+                            rotationTimerRef.current.stop();
+                        }
                         setIsRotating(false);
                     }
                 });
@@ -206,10 +206,9 @@ const SphereWorldMap = ({ year, indicator }) => {
                     svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
                 });
 
-                // Height and width of the legend item
+                // Legend setup
                 const legendItemSize = 20;
                 const legendSpacing = 4; // Space between items
-
                 const legend = svg.append('g').attr('class', 'legend').attr('transform', 'translate(20, 20)');
 
                 legend
@@ -248,7 +247,7 @@ const SphereWorldMap = ({ year, indicator }) => {
                 });
             },
         );
-    }, [year, indicator, isRotating]); // Dependency array to re-run effect on change
+    }, [year, indicator, isRotating, country]); // Dependency array to re-run effect on change
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px' }}>
@@ -262,6 +261,13 @@ const SphereWorldMap = ({ year, indicator }) => {
                 >
                     <CiZoomIn style={{ fontSize: '18px' }} />
                     Zoom to Vietnam
+                </button>
+                <button
+                    id="zoom-to-selected-country"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
+                >
+                    <CiZoomIn style={{ fontSize: '18px' }} />
+                    Zoom to selected country
                 </button>
 
                 {!isRotating ? (

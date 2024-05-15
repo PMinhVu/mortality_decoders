@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import  { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
 import Logo from '../../assets/images/logo.png';
@@ -10,6 +10,10 @@ const navLinks = [
     {
         path: '/',
         content: 'Home',
+    },
+    {
+        path: '/morality-insight',
+        content: 'Morality Insight',
     },
     {
         path: '/more',
@@ -36,6 +40,7 @@ const Sidebar = () => {
                     <li key={index}>
                         <NavLink
                             to={link.path}
+                            value={activeLink}
                             className={cx('link', { active: isActive(link.path) })}
                             onClick={() => handleNavLinkClick(index)}
                         >
