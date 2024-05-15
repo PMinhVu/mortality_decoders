@@ -68,8 +68,8 @@ const Home = () => {
     };
 
     useEffect(() => {
-        d3.csv('src/assets/data/combined_dataset.csv').then((data) => {
-            const uniqueCountries = Array.from(new Set(data.map((d) => d.Area)));
+        d3.json('src/assets/data/world.geojson').then((geojson) => {
+            const uniqueCountries = Array.from(new Set(geojson.features.map((d) => d.properties.name)));
             setCountries(uniqueCountries);
         });
     }, []);
@@ -107,8 +107,10 @@ const Home = () => {
                 <div className={cx('country')}>
                     <h3>Select Country</h3>
                     <select value={country} onChange={handleCountryChange}>
-                        {countries.map(country => (
-                            <option key={country} value={country}>{country}</option>
+                        {countries.map((country) => (
+                            <option key={country} value={country}>
+                                {country}
+                            </option>
                         ))}
                     </select>
                 </div>
