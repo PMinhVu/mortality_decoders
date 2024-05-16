@@ -70,7 +70,8 @@ const Home = () => {
     useEffect(() => {
         d3.json('src/assets/data/world.geojson').then((geojson) => {
             const uniqueCountries = Array.from(new Set(geojson.features.map((d) => d.properties.name)));
-            setCountries(uniqueCountries);
+            const sortedCountries = uniqueCountries.sort((a, b) => a.localeCompare(b));
+            setCountries(sortedCountries);
         });
     }, []);
 

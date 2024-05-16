@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
@@ -12,8 +12,8 @@ const navLinks = [
         content: 'Home',
     },
     {
-        path: '/morality-insight',
-        content: 'Morality Insight',
+        path: '/mortality-insight',
+        content: 'Mortality Insight',
     },
     {
         path: '/more',
@@ -37,16 +37,15 @@ const Sidebar = () => {
             <img src={Logo} alt="" />
             <div>
                 {navLinks.map((link, index) => (
-                    <li key={index}>
-                        <NavLink
-                            to={link.path}
-                            value={activeLink}
-                            className={cx('link', { active: isActive(link.path) })}
-                            onClick={() => handleNavLinkClick(index)}
-                        >
-                            {link.content}
-                        </NavLink>
-                    </li>
+                    <NavLink
+                        key={index}
+                        to={link.path}
+                        value={activeLink}
+                        className={cx('link', { active: isActive(link.path) })}
+                        onClick={() => handleNavLinkClick(index)}
+                    >
+                        {link.content}
+                    </NavLink>
                 ))}
             </div>
             <h4>

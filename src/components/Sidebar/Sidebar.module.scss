@@ -30,15 +30,22 @@
     list-style: none;
     font-size: 20px;
     margin-left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
 
     &:hover {
         cursor: pointer;
-        font-weight: 550;
+        color: var(--primaryColor);
     }
 }
 
 .active {
     font-weight: 550;
+    background-color: #e2e8f0;
+    color: var(--primaryColor);
+    border-radius: 7px;
 }
 
 .container h4 {

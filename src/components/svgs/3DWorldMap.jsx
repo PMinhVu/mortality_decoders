@@ -8,9 +8,9 @@ import { LuRotate3D, LuPauseCircle } from 'react-icons/lu';
 const SphereWorldMap = ({ country, year, indicator }) => {
     const svgRef = useRef();
     const zoomRef = useRef();
-    const [isRotating, setIsRotating] = useState(false);
+    const [isToggleRotating, setIsToggleRotating] = useState(false);
     const rotationTimerRef = useRef();
-    const sensitivity = 100;
+    const sensitivity = 200;
 
     useEffect(() => {
         const svg = d3.select(svgRef.current);
@@ -215,7 +215,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                             rotationTimerRef.current.stop();
                         }
                         // setIsRotating(false);
-                        isRotating = false
+                        isRotating = false;
                     }
                 });
 
@@ -288,10 +288,10 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                     Zoom to {country}
                 </button>
 
-                {!isRotating ? (
+                {!isToggleRotating ? (
                     <button
                         id="automatic-to-rotate"
-                        onClick={() => setIsRotating(true)}
+                        onClick={() => setIsToggleRotating(true)}
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
                     >
                         <LuRotate3D style={{ fontSize: '18px' }} />
@@ -299,7 +299,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                     </button>
                 ) : (
                     <button
-                        onClick={() => setIsRotating(false)}
+                        onClick={() => setIsToggleRotating(false)}
                         id="automatic-to-rotate"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
                     >
