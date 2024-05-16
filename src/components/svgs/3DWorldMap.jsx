@@ -9,8 +9,8 @@ const SphereWorldMap = ({ country, year, indicator }) => {
     const svgRef = useRef();
     const zoomRef = useRef();
     const [isRotating, setIsRotating] = useState(false);
-    const rotationTimerRef = useRef(null);
-    const sensitivity = 75;
+    const rotationTimerRef = useRef();
+    const sensitivity = 100;
 
     useEffect(() => {
         const svg = d3.select(svgRef.current);
@@ -127,7 +127,16 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                     .on('mouseout', function () {
                         d3.select(this).style('stroke', 'white');
                         d3.select('#tooltip').style('opacity', 0);
-                    });
+                    })
+                    .call(
+                        d3.drag().on('drag', (event) => {
+                            const rotate = projection.rotate();
+                            const k = sensitivity / projection.scale();
+                            const newRotation = [rotate[0] + event.dx * k, rotate[1] - event.dy * k];
+                            projection.rotate(newRotation);
+                            svg.selectAll('path').attr('d', pathGenerator);
+                        }),
+                    );
 
                 // Function to zoom to a specific country
                 const zoomToCountry = (countryName) => {
