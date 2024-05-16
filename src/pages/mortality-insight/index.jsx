@@ -66,7 +66,7 @@ const MortalityInsightPage = () => {
                     </select>
                 </div>
                 <div className={cx('country')}>
-                    <h3>Select Country</h3>
+                    <h3>Select country</h3>
                     <select value={country} onChange={handleCountryChange}>
                         {countries.map(country => (
                             <option key={country} value={country}>{country}</option>
