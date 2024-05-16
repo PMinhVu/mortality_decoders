@@ -10,7 +10,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
     const zoomRef = useRef();
     const [isToggleRotating, setIsToggleRotating] = useState(false);
     const rotationTimerRef = useRef();
-    const sensitivity = 200;
+    const sensitivity = 150;
 
     useEffect(() => {
         const svg = d3.select(svgRef.current);

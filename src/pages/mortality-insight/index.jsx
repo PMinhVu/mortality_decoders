@@ -46,7 +46,8 @@ const MortalityInsightPage = () => {
     useEffect(() => {
         d3.csv('src/assets/data/combined_dataset.csv').then((data) => {
             const uniqueCountries = Array.from(new Set(data.map(d => d.Area)));
-            setCountries(uniqueCountries);
+            const sortedCountries = uniqueCountries.sort((a, b) => a.localeCompare(b));
+            setCountries(sortedCountries);
           });
     }, []);
 
