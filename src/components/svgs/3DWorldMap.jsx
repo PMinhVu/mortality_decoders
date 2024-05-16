@@ -16,6 +16,8 @@ const SphereWorldMap = ({ country, year, indicator }) => {
         const svg = d3.select(svgRef.current);
         const width = 800;
         const height = 550;
+        let isRotating = false;
+
         svg.attr('width', width).attr('height', height);
 
         // Projection and path generator setup
@@ -170,7 +172,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                                 const x = (bounds[0][0] + bounds[1][0]) / 2;
                                 const y = (bounds[0][1] + bounds[1][1]) / 2;
                                 const scale = Math.min(8, 0.9 / Math.max(dx / width, dy / height));
-                                const translate = [width / 2 - scale * x, height / 2 - scale * y];
+                                const translate = [width / 1.8 - scale * x, height / 2 - scale * y];
 
                                 svg.transition()
                                     .duration(750)
@@ -181,7 +183,8 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                                 if (rotationTimerRef.current) {
                                     rotationTimerRef.current.stop();
                                 }
-                                setIsRotating(false);
+                                // setIsRotating(false);
+                                isRotating = false;
                             });
                     }
                 };
@@ -205,12 +208,14 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                             projection.rotate([rotate[0] - 1 * k, rotate[1]]);
                             svg.selectAll('path').attr('d', pathGenerator);
                         }, 200);
-                        setIsRotating(true);
+                        // setIsRotating(true);
+                        isRotating = true;
                     } else {
                         if (rotationTimerRef.current) {
                             rotationTimerRef.current.stop();
                         }
-                        setIsRotating(false);
+                        // setIsRotating(false);
+                        isRotating = false
                     }
                 });
 
@@ -260,7 +265,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                 });
             },
         );
-    }, [year, indicator, isRotating, country]); // Dependency array to re-run effect on change
+    }, [year, indicator, country]); // Dependency array to re-run effect on change
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px' }}>
@@ -286,6 +291,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                 {!isRotating ? (
                     <button
                         id="automatic-to-rotate"
+                        onClick={() => setIsRotating(true)}
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
                     >
                         <LuRotate3D style={{ fontSize: '18px' }} />
@@ -293,6 +299,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                     </button>
                 ) : (
                     <button
+                        onClick={() => setIsRotating(false)}
                         id="automatic-to-rotate"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
                     >
