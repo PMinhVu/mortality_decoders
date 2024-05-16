@@ -24,7 +24,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
             .scale(250)
             .center([0, 0])
             .rotate([0, -30])
-            .translate([width / 2, height / 2]);
+            .translate([width / 1.8, height / 2]);
         const pathGenerator = d3.geoPath().projection(projection);
 
         // Define zoom behavior
@@ -72,7 +72,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
             .attr('fill', 'url(#globeGradient)') // Use the gradient
             .attr('stroke', '#000')
             .attr('stroke-width', '0.2')
-            .attr('cx', width / 2)
+            .attr('cx', width / 1.8)
             .attr('cy', height / 2)
             .attr('r', projection.scale());
 
