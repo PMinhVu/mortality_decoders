@@ -5,7 +5,7 @@
     justify-content: space-between;
     gap: 100px;
     position: fixed;
-    background-color: #d3d3d3;
+    background-color: #c0c0c0;
     width: 250px;
     height: 100vh;
     z-index: 100;
@@ -48,5 +48,5 @@
 }
 
 .container h4 b {
-    color: #084594;
+    color: var(--primaryColor);
 }

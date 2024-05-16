@@ -15,7 +15,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
     useEffect(() => {
         const svg = d3.select(svgRef.current);
         const width = 800;
-        const height = 500;
+        const height = 550;
         svg.attr('width', width).attr('height', height);
 
         // Projection and path generator setup
@@ -112,7 +112,11 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                             lowerBound: 0,
                             upperBound: 0,
                         };
-                        const tooltipHtml = `Country: <strong>${d.properties.name}</strong><br/>UN IGME estimate: ${data.obsValue.toLocaleString()}<br/>Uncertainty interval: (${data.lowerBound.toFixed(2)}-${data.upperBound.toFixed(2)})`;
+                        const tooltipHtml = `Country: <strong>${
+                            d.properties.name
+                        }</strong><br/>UN IGME estimate: ${data.obsValue.toLocaleString()}<br/>Uncertainty interval: (${data.lowerBound.toFixed(
+                            2,
+                        )}-${data.upperBound.toFixed(2)})`;
                         d3.select('#tooltip')
                             .html(tooltipHtml)
                             .style('padding', '5px')
@@ -276,7 +280,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}
                 >
                     <CiZoomIn style={{ fontSize: '18px' }} />
-                    Zoom to selected country
+                    Zoom to {country}
                 </button>
 
                 {!isRotating ? (

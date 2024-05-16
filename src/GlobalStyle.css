@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 button {
@@ -12,4 +13,8 @@ button {
 button:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+:root {
+    --primaryColor: #084594;
 }
