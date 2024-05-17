@@ -3,41 +3,16 @@ import classNames from 'classnames/bind';
 import styles from './index.module.scss';
 import TimeSeries from '@components/svgs/TimeSeriesChart';
 import * as d3 from 'd3';
+import BarChart from '@components/svgs/BarChart';
 
 const cx = classNames.bind(styles);
 
-const Indicators = [
-    {
-        id: 1,
-        value: 'Neonatal mortality rate',
-    },
-    {
-        id: 2,
-        value: 'Mortality rate age 5-9',
-    },
-    {
-        id: 3,
-        value: 'Mortality rate age 10-14',
-    },
-    {
-        id: 4,
-        value: 'Mortality rate age 15-19',
-    },
-    {
-        id: 5,
-        value: 'Mortality rate age 20-24',
-    },
-];
 
 
 const MortalityInsightPage = () => {
-    const [selectedIndicator, setSelectedIndicator] = useState(Indicators[0].value);
     const [country, setCountry] = useState('Afghanistan');
     const [countries, setCountries] = useState([]);
 
-    const handleIndicatorChange = (event) => {
-        setSelectedIndicator(event.target.value);
-    };
 
     const handleCountryChange = (event) =>{
         setCountry(event.target.value);
@@ -55,16 +30,6 @@ const MortalityInsightPage = () => {
     return (
         <div className={cx('container')}>
             <div className={cx('filtration')}>
-                <div className={cx('indicator')}>
-                    <h3>Select indicator</h3>
-                    <select name="" id="indicator" value={selectedIndicator} onChange={handleIndicatorChange}>
-                        {Indicators.map((indicator, index) => (
-                            <option key={index} value={indicator.value}>
-                                {indicator.value}
-                            </option>
-                        ))}
-                    </select>
-                </div>
                 <div className={cx('country')}>
                     <h3>Select country</h3>
                     <select value={country} onChange={handleCountryChange}>
@@ -75,7 +40,8 @@ const MortalityInsightPage = () => {
                 </div>
             </div>
             <div>
-                <TimeSeries indicator={selectedIndicator} country={country} />
+                <TimeSeries country={country} />
+                {/* <BarChart indicator={selectedIndicator} country={country} /> */}
             </div>
         </div>
     );
