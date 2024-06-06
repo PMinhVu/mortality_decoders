@@ -41,7 +41,7 @@ const MortalityInsightPage = () => {
             </div>
             <div>
                 <TimeSeries country={country} />
-                {/* <BarChart indicator={selectedIndicator} country={country} /> */}
+                {/* <BarChart country={country} /> */}
             </div>
         </div>
     );

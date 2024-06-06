@@ -16,6 +16,10 @@ const navLinks = [
         content: 'Mortality Insight',
     },
     {
+        path: '/cause-of-death',
+        content: 'Cause of Death',
+    },
+    {
         path: '/more',
         content: 'More',
     },

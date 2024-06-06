@@ -1,0 +1,16 @@
+DATAFLOW,REF_AREA,INDICATOR,CAUSE_OF_DEATH,SEX,AGE_GROUP,SERIES_NAME,TIME_PERIOD,OBS_VALUE,UNIT_MEASURE,MODEL,REF_DATE,LOWER_BOUND,UPPER_BOUND,ROUNDED_OBS_VALUE ,PROPORTION
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2021,3265.76581,D: Number of deaths,,2021,1450,5550,3266,10.72%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,MEASLES: Measles,_T: Total,Y0T4: Under 5 years,JHU,2021,3.178037882,D: Number of deaths,,2021,2,4,3,0.01%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2021,7000.203282,D: Number of deaths,,2021,4820,9710,7000,22.99%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,ASPHY_TRAUMA: Birth asphyxia/trauma,_T: Total,Y0T4: Under 5 years,JHU,2021,2816.432515,D: Number of deaths,,2021,1660,4420,2816,9.25%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,DIARRHOEAL: Diarrhea,_T: Total,Y0T4: Under 5 years,JHU,2021,1289.221721,D: Number of deaths,,2021,916,1740,1289,4.23%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,SEPSIS: Sepsis,_T: Total,Y0T4: Under 5 years,JHU,2021,903.0907138,D: Number of deaths,,2021,480,1440,903,2.97%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,MENINGITIS_ENC: Meningitis/encephalitis,_T: Total,Y0T4: Under 5 years,JHU,2021,378.4801758,D: Number of deaths,,2021,286,495,378,1.24%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,TETANUS: Tetanus,_T: Total,Y0T4: Under 5 years,JHU,2021,2.208111084,D: Number of deaths,,2021,0,5,2,0.01%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,TUBERCULOSIS: Tuberculosis,_T: Total,Y0T4: Under 5 years,JHU,2021,1879.596843,D: Number of deaths,,2021,0,3980,1880,6.17%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,HIV: HIV/AIDS,_T: Total,Y0T4: Under 5 years,JHU,2021,93.41594112,D: Number of deaths,,2021,56,124,93,0.31%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,MALARIA: Malaria,_T: Total,Y0T4: Under 5 years,JHU,2021,0,D: Number of deaths,,2021,0,1,0,0.00%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2021,6276.521092,D: Number of deaths,,2021,4920,8000,6277,20.61%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,INJURIES: Injuries,_T: Total,Y0T4: Under 5 years,JHU,2021,2367.61174,D: Number of deaths,,2021,1750,3120,2368,7.78%
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,OTHER_U5: Other under-5 deaths,_T: Total,Y0T4: Under 5 years,JHU,2021,4178.021735,D: Number of deaths,,2021,3240,5560,4178,13.72%
+,,,,,,,,,,,,,,,
