@@ -1,0 +1,67 @@
+DATAFLOW,REF_AREA:Geographic area,INDICATOR:Indicator,CAUSE_OF_DEATH,SEX:Sex,AGE_GROUP:Age group,SERIES_NAME:Series Name,TIME_PERIOD,OBS_VALUE,UNIT_MEASURE:Unit of measure,MODEL:Model Used,REF_DATE:Reference Date,LOWER_BOUND:Lower Bound,UPPER_BOUND:Upper Bound
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2000,4901.07263,D: Number of deaths,,2000,1830,8990
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2001,4633.568146,D: Number of deaths,,2001,1720,8810
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2002,4721.911189,D: Number of deaths,,2002,1650,8590
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2003,4469.919756,D: Number of deaths,,2003,1570,8560
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2004,4505.369728,D: Number of deaths,,2004,1590,8300
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2005,4199.09367,D: Number of deaths,,2005,1520,8140
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2006,4072.314103,D: Number of deaths,,2006,1480,7740
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2007,3836.028246,D: Number of deaths,,2007,1530,7290
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2008,3789.974439,D: Number of deaths,,2008,1530,7090
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2009,3757.886143,D: Number of deaths,,2009,1540,6870
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2010,3464.020567,D: Number of deaths,,2010,1480,6360
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2011,3387.982873,D: Number of deaths,,2011,1480,5990
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2012,3543.977545,D: Number of deaths,,2012,1560,5990
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2013,3631.700188,D: Number of deaths,,2013,1580,6090
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2014,3564.43161,D: Number of deaths,,2014,1580,6050
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2015,3574.925511,D: Number of deaths,,2015,1580,5900
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2016,3662.487673,D: Number of deaths,,2016,1570,5870
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2017,3698.419724,D: Number of deaths,,2017,1560,5780
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2018,3767.900689,D: Number of deaths,,2018,1580,5720
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2019,3762.966676,D: Number of deaths,,2019,1570,5670
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2020,3774.183273,D: Number of deaths,,2020,1510,5600
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,LRI: Lower respiratory infections,_T: Total,Y0T4: Under 5 years,JHU,2021,3265.76581,D: Number of deaths,,2021,1450,5550
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2000,11223.58152,D: Number of deaths,,2000,8850,14400
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2001,10925.91333,D: Number of deaths,,2001,8420,13700
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2002,10589.93523,D: Number of deaths,,2002,8020,13400
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2003,10214.06593,D: Number of deaths,,2003,7920,13100
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2004,10049.97635,D: Number of deaths,,2004,7680,12800
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2005,9634.290522,D: Number of deaths,,2005,7560,12200
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2006,9291.968308,D: Number of deaths,,2006,6930,11900
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2007,9146.761126,D: Number of deaths,,2007,6930,11600
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2008,9154.526347,D: Number of deaths,,2008,6760,11600
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2009,9004.699915,D: Number of deaths,,2009,6800,11300
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2010,8821.816168,D: Number of deaths,,2010,6930,11200
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2011,8792.517906,D: Number of deaths,,2011,6860,11200
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2012,8726.840594,D: Number of deaths,,2012,6550,11100
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2013,8668.252096,D: Number of deaths,,2013,6540,10900
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2014,8508.759174,D: Number of deaths,,2014,6010,11000
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2015,8255.32643,D: Number of deaths,,2015,6130,10700
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2016,8043.623219,D: Number of deaths,,2016,5890,10300
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2017,7788.058853,D: Number of deaths,,2017,5620,10000
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2018,7634.109185,D: Number of deaths,,2018,5510,10500
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2019,7491.730815,D: Number of deaths,,2019,5360,9960
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2020,7215.603659,D: Number of deaths,,2020,5030,10100
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,PREMATURITY: Prematurity,_T: Total,Y0T4: Under 5 years,JHU,2021,7000.203282,D: Number of deaths,,2021,4820,9710
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2000,5165.042851,D: Number of deaths,,2000,3960,6580
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2001,5155.86785,D: Number of deaths,,2001,4000,6600
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2002,5231.059003,D: Number of deaths,,2002,3940,6850
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2003,5279.281141,D: Number of deaths,,2003,4080,6980
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2004,5359.960935,D: Number of deaths,,2004,4050,7040
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2005,5433.838409,D: Number of deaths,,2005,4210,7130
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2006,5435.581516,D: Number of deaths,,2006,4280,7190
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2007,5578.304884,D: Number of deaths,,2007,4370,7050
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2008,5714.393871,D: Number of deaths,,2008,4550,7460
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2009,5820.117368,D: Number of deaths,,2009,4610,7470
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2010,6012.910663,D: Number of deaths,,2010,4790,7610
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2011,6079.68043,D: Number of deaths,,2011,4940,7640
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2012,6288.031433,D: Number of deaths,,2012,5080,8180
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2013,6392.75185,D: Number of deaths,,2013,5070,8200
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2014,6492.012715,D: Number of deaths,,2014,5440,8190
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2015,6623.925368,D: Number of deaths,,2015,5350,8630
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2016,6572.371107,D: Number of deaths,,2016,5490,8120
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2017,6566.991177,D: Number of deaths,,2017,5370,8160
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2018,6497.275512,D: Number of deaths,,2018,5220,8220
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2019,6405.630849,D: Number of deaths,,2019,5260,8160
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2020,6437.62211,D: Number of deaths,,2020,5070,8290
+UNICEF:CME_CAUSE_OF_DEATH(1.0): CME Cause of death,VNM: Viet Nam,DEATHS: Deaths,CONGENITAL: Congenital anomalies,_T: Total,Y0T4: Under 5 years,JHU,2021,6276.521092,D: Number of deaths,,2021,4920,8000

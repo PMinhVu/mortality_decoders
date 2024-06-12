@@ -20,8 +20,8 @@ const navLinks = [
         content: 'Cause of Death',
     },
     {
-        path: '/more',
-        content: 'More',
+        path: '/progress',
+        content: 'Progress',
     },
 ];
 

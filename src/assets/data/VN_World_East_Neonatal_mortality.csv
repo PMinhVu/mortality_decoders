@@ -1,0 +1,100 @@
+Geographic area,Indicator,Sex,Wealth Quintile,Series Name,Series Year,Regional group,TIME_PERIOD,OBS_VALUE,COUNTRY_NOTES,CONNECTION,DEATH_CATEGORY,CATEGORY,Observation Status,Unit of measure,Series Category,Series Type,STD_ERR,REF_DATE,Age Group of Women,Time Since First Birth,DEFINITION,INTERVAL,Series Method,LOWER_BOUND,UPPER_BOUND,STATUS,YEAR_TO_ACHIEVE,Model Used
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1990-06,29.18327683,,,,,Normal value,"Deaths per 1,000 live births",,,,1990.5,,,,1,,26.8658742,31.9439307,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1991-06,28.74619996,,,,,Normal value,"Deaths per 1,000 live births",,,,1991.5,,,,1,,26.80980242,31.08768201,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1992-06,28.20228783,,,,,Normal value,"Deaths per 1,000 live births",,,,1992.5,,,,1,,26.51753823,30.28025206,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1993-06,27.56025702,,,,,Normal value,"Deaths per 1,000 live births",,,,1993.5,,,,1,,26.03112052,29.42136644,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1994-06,26.78630788,,,,,Normal value,"Deaths per 1,000 live births",,,,1994.5,,,,1,,25.37398986,28.47930503,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1995-06,26.15028781,,,,,Normal value,"Deaths per 1,000 live births",,,,1995.5,,,,1,,24.78860769,27.73536454,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1996-06,25.19856296,,,,,Normal value,"Deaths per 1,000 live births",,,,1996.5,,,,1,,23.88094818,26.71833959,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1997-06,24.22137468,,,,,Normal value,"Deaths per 1,000 live births",,,,1997.5,,,,1,,22.98935474,25.62334045,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1998-06,23.27135276,,,,,Normal value,"Deaths per 1,000 live births",,,,1998.5,,,,1,,22.04500569,24.61893575,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,1999-06,22.37933712,,,,,Normal value,"Deaths per 1,000 live births",,,,1999.5,,,,1,,21.15964889,23.66922955,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2000-06,21.46819324,,,,,Normal value,"Deaths per 1,000 live births",,,,2000.5,,,,1,,20.24392556,22.69224582,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2001-06,20.37969246,,,,,Normal value,"Deaths per 1,000 live births",,,,2001.5,,,,1,,19.21624118,21.5349448,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2002-06,19.23513241,,,,,Normal value,"Deaths per 1,000 live births",,,,2002.5,,,,1,,18.16403078,20.31103035,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2003-06,17.85421498,,,,,Normal value,"Deaths per 1,000 live births",,,,2003.5,,,,1,,16.83798033,18.86151528,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2004-06,16.75975653,,,,,Normal value,"Deaths per 1,000 live births",,,,2004.5,,,,1,,15.78075212,17.68779949,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2005-06,15.68575382,,,,,Normal value,"Deaths per 1,000 live births",,,,2005.5,,,,1,,14.74175028,16.55938497,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2006-06,14.70321424,,,,,Normal value,"Deaths per 1,000 live births",,,,2006.5,,,,1,,13.78374739,15.52759328,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2007-06,13.80570347,,,,,Normal value,"Deaths per 1,000 live births",,,,2007.5,,,,1,,12.92646983,14.56812845,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2008-06,12.94367368,,,,,Normal value,"Deaths per 1,000 live births",,,,2008.5,,,,1,,12.09775482,13.65858307,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2009-06,12.11433998,,,,,Normal value,"Deaths per 1,000 live births",,,,2009.5,,,,1,,11.31726699,12.78806034,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2010-06,11.42093939,,,,,Normal value,"Deaths per 1,000 live births",,,,2010.5,,,,1,,10.66477549,12.07280435,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2011-06,10.80633142,,,,,Normal value,"Deaths per 1,000 live births",,,,2011.5,,,,1,,10.08793467,11.43959609,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2012-06,10.08474407,,,,,Normal value,"Deaths per 1,000 live births",,,,2012.5,,,,1,,9.38878472,10.68929464,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2013-06,9.638725142,,,,,Normal value,"Deaths per 1,000 live births",,,,2013.5,,,,1,,8.946418192,10.24274069,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2014-06,9.092799124,,,,,Normal value,"Deaths per 1,000 live births",,,,2014.5,,,,1,,8.427845786,9.687563169,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2015-06,8.779710707,,,,,Normal value,"Deaths per 1,000 live births",,,,2015.5,,,,1,,8.127803933,9.391218764,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2016-06,8.275940041,,,,,Normal value,"Deaths per 1,000 live births",,,,2016.5,,,,1,,7.646850019,8.897940578,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2017-06,7.886382177,,,,,Normal value,"Deaths per 1,000 live births",,,,2017.5,,,,1,,7.261539716,8.524563226,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2018-06,7.932039866,,,,,Normal value,"Deaths per 1,000 live births",,,,2018.5,,,,1,,7.274788912,8.669779464,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2019-06,7.76946307,,,,,Normal value,"Deaths per 1,000 live births",,,,2019.5,,,,1,,7.078342187,8.594054322,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2020-06,7.897253123,,,,,Normal value,"Deaths per 1,000 live births",,,,2020.5,,,,1,,7.142382244,8.869820782,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2021-06,7.898356995,,,,,Normal value,"Deaths per 1,000 live births",,,,2021.5,,,,1,,7.065353545,9.029323836,,,
+East Asia and Pacific,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,UNICEF,2022-06,7.678232219,,,,,Normal value,"Deaths per 1,000 live births",,,,2022.5,,,,1,,6.808721546,8.952435781,,,
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1990-06,23.71576429,,,,,Normal value,"Deaths per 1,000 live births",,,,1990.5,,,,1,,20.98478155,27.18021077,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1991-06,23.08536136,,,,,Normal value,"Deaths per 1,000 live births",,,,1991.5,,,,1,,20.42854248,26.52810616,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1992-06,22.36460693,,,,,Normal value,"Deaths per 1,000 live births",,,,1992.5,,,,1,,19.7894893,25.70119588,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1993-06,21.57844171,,,,,Normal value,"Deaths per 1,000 live births",,,,1993.5,,,,1,,19.07416556,24.72823888,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1994-06,20.72896263,,,,,Normal value,"Deaths per 1,000 live births",,,,1994.5,,,,1,,18.25816891,23.69351284,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1995-06,19.85970625,,,,,Normal value,"Deaths per 1,000 live births",,,,1995.5,,,,1,,17.38382565,22.66460242,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1996-06,18.95273585,,,,,Normal value,"Deaths per 1,000 live births",,,,1996.5,,,,1,,16.4543789,21.77020866,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1997-06,17.84606764,,,,,Normal value,"Deaths per 1,000 live births",,,,1997.5,,,,1,,15.31457963,20.63272129,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1998-06,16.76820018,,,,,Normal value,"Deaths per 1,000 live births",,,,1998.5,,,,1,,14.22862198,19.54273808,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1999-06,15.83298961,,,,,Normal value,"Deaths per 1,000 live births",,,,1999.5,,,,1,,13.29766733,18.5579433,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2000-06,15.01569608,,,,,Normal value,"Deaths per 1,000 live births",,,,2000.5,,,,1,,12.45311257,17.69964035,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2001-06,14.32019094,,,,,Normal value,"Deaths per 1,000 live births",,,,2001.5,,,,1,,11.7636596,16.98423514,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2002-06,13.73645327,,,,,Normal value,"Deaths per 1,000 live births",,,,2002.5,,,,1,,11.23926753,16.33362899,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2003-06,13.22689134,,,,,Normal value,"Deaths per 1,000 live births",,,,2003.5,,,,1,,10.84680214,15.73396893,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2004-06,12.82940659,,,,,Normal value,"Deaths per 1,000 live births",,,,2004.5,,,,1,,10.53405951,15.25641158,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2005-06,12.52667586,,,,,Normal value,"Deaths per 1,000 live births",,,,2005.5,,,,1,,10.32059638,14.83641258,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2006-06,12.28407379,,,,,Normal value,"Deaths per 1,000 live births",,,,2006.5,,,,1,,10.19177338,14.46534492,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2007-06,12.10957823,,,,,Normal value,"Deaths per 1,000 live births",,,,2007.5,,,,1,,10.14131578,14.16558229,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2008-06,11.96650781,,,,,Normal value,"Deaths per 1,000 live births",,,,2008.5,,,,1,,10.14360961,13.92199635,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2009-06,11.84522353,,,,,Normal value,"Deaths per 1,000 live births",,,,2009.5,,,,1,,10.1387632,13.77069279,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2010-06,11.74926319,,,,,Normal value,"Deaths per 1,000 live births",,,,2010.5,,,,1,,10.10962536,13.62324811,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2011-06,11.64274563,,,,,Normal value,"Deaths per 1,000 live births",,,,2011.5,,,,1,,9.981394769,13.53678812,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2012-06,11.53654954,,,,,Normal value,"Deaths per 1,000 live births",,,,2012.5,,,,1,,9.821671469,13.50144899,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2013-06,11.4281209,,,,,Normal value,"Deaths per 1,000 live births",,,,2013.5,,,,1,,9.642615618,13.42480001,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2014-06,11.31380431,,,,,Normal value,"Deaths per 1,000 live births",,,,2014.5,,,,1,,9.453887586,13.40944077,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2015-06,11.21721062,,,,,Normal value,"Deaths per 1,000 live births",,,,2015.5,,,,1,,9.293320227,13.35792481,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2016-06,11.10178144,,,,,Normal value,"Deaths per 1,000 live births",,,,2016.5,,,,1,,9.080929896,13.37336584,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2017-06,10.99726724,,,,,Normal value,"Deaths per 1,000 live births",,,,2017.5,,,,1,,8.890969786,13.35567655,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2018-06,10.88347084,,,,,Normal value,"Deaths per 1,000 live births",,,,2018.5,,,,1,,8.677017493,13.329086,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2019-06,10.77739683,,,,,Normal value,"Deaths per 1,000 live births",,,,2019.5,,,,1,,8.502583994,13.34488957,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2020-06,10.6707247,,,,,Normal value,"Deaths per 1,000 live births",,,,2020.5,,,,1,,8.282635747,13.37915078,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2021-06,10.54179256,,,,,Normal value,"Deaths per 1,000 live births",,,,2021.5,,,,1,,8.032445232,13.44323911,,,BNUR
+Viet Nam,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2022-06,10.37770558,,,,,Normal value,"Deaths per 1,000 live births",,,,2022.5,,,,1,,7.759193721,13.44731681,,,BNUR
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1990-06,36.7561348,,,,,Normal value,"Deaths per 1,000 live births",,,,1990.5,,,,1,,35.60930918,38.41209282,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1991-06,36.51831866,,,,,Normal value,"Deaths per 1,000 live births",,,,1991.5,,,,1,,35.4548097,38.06287511,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1992-06,36.08507146,,,,,Normal value,"Deaths per 1,000 live births",,,,1992.5,,,,1,,35.05963558,37.50516234,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1993-06,35.6052062,,,,,Normal value,"Deaths per 1,000 live births",,,,1993.5,,,,1,,34.60444959,36.97473546,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1994-06,35.08002673,,,,,Normal value,"Deaths per 1,000 live births",,,,1994.5,,,,1,,34.08823815,36.39834169,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1995-06,34.52814327,,,,,Normal value,"Deaths per 1,000 live births",,,,1995.5,,,,1,,33.54720695,35.79900951,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1996-06,33.85026067,,,,,Normal value,"Deaths per 1,000 live births",,,,1996.5,,,,1,,32.89122248,35.06186821,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1997-06,33.14350875,,,,,Normal value,"Deaths per 1,000 live births",,,,1997.5,,,,1,,32.21203864,34.31614344,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1998-06,32.37904526,,,,,Normal value,"Deaths per 1,000 live births",,,,1998.5,,,,1,,31.46611824,33.51831043,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,1999-06,31.60170727,,,,,Normal value,"Deaths per 1,000 live births",,,,1999.5,,,,1,,30.70425583,32.67974773,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2000-06,30.69404538,,,,,Normal value,"Deaths per 1,000 live births",,,,2000.5,,,,1,,29.82812487,31.7255319,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2001-06,29.89026895,,,,,Normal value,"Deaths per 1,000 live births",,,,2001.5,,,,1,,29.05392215,30.8882294,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2002-06,28.96534951,,,,,Normal value,"Deaths per 1,000 live births",,,,2002.5,,,,1,,28.1575319,29.94608493,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2003-06,27.96754508,,,,,Normal value,"Deaths per 1,000 live births",,,,2003.5,,,,1,,27.17089898,28.9232674,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2004-06,27.01570131,,,,,Normal value,"Deaths per 1,000 live births",,,,2004.5,,,,1,,26.23950875,27.94433233,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2005-06,26.10599586,,,,,Normal value,"Deaths per 1,000 live births",,,,2005.5,,,,1,,25.3524048,27.01530087,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2006-06,25.22118359,,,,,Normal value,"Deaths per 1,000 live births",,,,2006.5,,,,1,,24.49472356,26.09113184,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2007-06,24.40767854,,,,,Normal value,"Deaths per 1,000 live births",,,,2007.5,,,,1,,23.70919972,25.2588057,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2008-06,23.59762774,,,,,Normal value,"Deaths per 1,000 live births",,,,2008.5,,,,1,,22.93292121,24.43368651,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2009-06,22.92745743,,,,,Normal value,"Deaths per 1,000 live births",,,,2009.5,,,,1,,22.26925422,23.73728611,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2010-06,22.31507661,,,,,Normal value,"Deaths per 1,000 live births",,,,2010.5,,,,1,,21.67785214,23.10405212,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2011-06,21.72047555,,,,,Normal value,"Deaths per 1,000 live births",,,,2011.5,,,,1,,21.10207734,22.51191861,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2012-06,20.97287323,,,,,Normal value,"Deaths per 1,000 live births",,,,2012.5,,,,1,,20.36089301,21.76894852,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2013-06,20.51438709,,,,,Normal value,"Deaths per 1,000 live births",,,,2013.5,,,,1,,19.89813689,21.34465907,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2014-06,19.88004491,,,,,Normal value,"Deaths per 1,000 live births",,,,2014.5,,,,1,,19.25039994,20.74843568,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2015-06,19.52054173,,,,,Normal value,"Deaths per 1,000 live births",,,,2015.5,,,,1,,18.87391803,20.44809772,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2016-06,19.01987483,,,,,Normal value,"Deaths per 1,000 live births",,,,2016.5,,,,1,,18.37028752,20.01784038,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2017-06,18.58007685,,,,,Normal value,"Deaths per 1,000 live births",,,,2017.5,,,,1,,17.89245058,19.6736767,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2018-06,18.48535164,,,,,Normal value,"Deaths per 1,000 live births",,,,2018.5,,,,1,,17.72974388,19.72513399,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2019-06,18.15030792,,,,,Normal value,"Deaths per 1,000 live births",,,,2019.5,,,,1,,17.34514523,19.55156305,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2020-06,17.9619579,,,,,Normal value,"Deaths per 1,000 live births",,,,2020.5,,,,1,,17.08562982,19.58179254,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2021-06,17.67417817,,,,,Normal value,"Deaths per 1,000 live births",,,,2021.5,,,,1,,16.71433242,19.50736745,,,
+World,Neonatal mortality rate,Total,Total,UN IGME estimate,2021,,2022-06,17.26955917,,,,,Normal value,"Deaths per 1,000 live births",,,,2022.5,,,,1,,16.22283821,19.31738591,,,

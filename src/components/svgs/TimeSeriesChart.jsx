@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
 // eslint-disable-next-line react/prop-types
-const TimeSeries = ({ country }) => {
+const TimeSeries = () => {
     const svgRef = useRef();
 
     useEffect(() => {
@@ -10,8 +10,8 @@ const TimeSeries = ({ country }) => {
         svg.selectAll('*').remove(); // Clear the previous data content
 
         const width = 800;
-        const height = 550;
-        const margin = { top: 150, right: 30, bottom: 30, left: 40 };
+        const height = 600;
+        const margin = { top: 50, right: 30, bottom: 70, left: 20 }; // Adjusted bottom margin for legend
 
         const showTooltips = (dotPositions, tooltipData, colors) => {
             tooltipData.forEach((d, index) => {
@@ -38,9 +38,7 @@ const TimeSeries = ({ country }) => {
                     tooltip.transition().duration(200).style('opacity', 0.9);
                     tooltip
                         .html(
-                            `<b>Year: </b><b style="color: ${colors(index)}">${
-                                d.TIME_PERIOD
-                            }</b><br/><b>Value: <b><b style="color: ${colors(index)}">${(+d.OBS_VALUE).toFixed(2)}</b>`,
+                            `<b>Year: </b><b style="color: ${colors(index)}">${d.TIME_PERIOD.split('-')[0]}</b><br/><b>Value: <b><b style="color: ${colors(index)}">${(+d.OBS_VALUE).toFixed(2)}</b>`,
                         )
                         .style('left', `${dotPositions[index].x + 20}px`)
                         .style('top', `${dotPositions[index].y - 10}px`);
@@ -52,8 +50,8 @@ const TimeSeries = ({ country }) => {
             d3.selectAll('.tooltip').transition().duration(200).style('opacity', 0);
         };
 
-        d3.csv('src/assets/data/combined_dataset.csv').then((data) => {
-            const parseDate = d3.timeParse('%Y');
+        d3.csv('src/assets/data/mortality_for_all.csv').then((data) => {
+            const parseDate = d3.timeParse('%Y-%M');
 
             const uniqueIndicators = [...new Set(data.map((d) => d.Indicator))];
 
@@ -64,7 +62,7 @@ const TimeSeries = ({ country }) => {
 
             const y = d3
                 .scaleLinear()
-                .domain([0, d3.max(data, (d) => d.Area === country && +d.OBS_VALUE)])
+                .domain([0, d3.max(data, (d) => d["Geographic area"] === "Viet Nam" && +d.OBS_VALUE)])
                 .nice()
                 .range([height - margin.bottom, margin.top]);
 
@@ -90,7 +88,7 @@ const TimeSeries = ({ country }) => {
             const colors = d3.scaleOrdinal(d3.schemeCategory10);
 
             uniqueIndicators.forEach((indicator, index) => {
-                const filteredData = data.filter((d) => d.Indicator === indicator && d.Area === country);
+                const filteredData = data.filter((d) => d.Indicator === indicator && d["Geographic area"] === "Viet Nam");
 
                 svg.append('path')
                     .datum(filteredData)
@@ -135,7 +133,7 @@ const TimeSeries = ({ country }) => {
     
                         const tooltipData = uniqueIndicators.map((indicator) => {
                             const indicatorData = data.find(
-                                (item) => item.Indicator === indicator && item.TIME_PERIOD === year && item.Area === country,
+                                (item) => item.Indicator === indicator && item.TIME_PERIOD === year && item["Geographic area"] === "Viet Nam",
                             );
                             return indicatorData;
                         });
@@ -171,10 +169,10 @@ const TimeSeries = ({ country }) => {
             const legend = svg
                 .append('g')
                 .attr('class', 'legend')
-                .attr('transform', `translate(${width - margin.right - 200}, ${margin.top - 120})`);
+                .attr('transform', `translate(${margin.left}, ${height - margin.bottom + 30})`);
 
             uniqueIndicators.forEach((indicator, index) => {
-                const legendRow = legend.append('g').attr('transform', `translate(0, ${index * 20})`);
+                const legendRow = legend.append('g').attr('transform', `translate(${index * 150}, 0)`);
 
                 legendRow
                     .append('line')
@@ -187,8 +185,19 @@ const TimeSeries = ({ country }) => {
 
                 legendRow.append('text').attr('x', 25).attr('y', 10).text(indicator).attr('font-size', '12px');
             });
+
+            // Add chart title
+            svg.append('text')
+                .attr('x', width / 2)
+                .attr('y', margin.top / 2)
+                .attr('text-anchor', 'middle')
+                .attr('font-size', '20px')
+                .attr('font-weight', 'bold')
+                .text(`Time Series Data for Viet Nam`);
+        }).catch(error => {
+            console.error('Error loading or parsing data:', error);
         });
-    }, [country]);
+    });
 
     return (
         <div>

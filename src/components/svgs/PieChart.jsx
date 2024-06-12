@@ -44,14 +44,17 @@ const PieChart = () => {
                 .attr('x1', '0%')
                 .attr('y1', '0%')
                 .attr('x2', '100%')
-                .attr('y2', '100%');
+                .attr('y2', '0%'); // Horizontal gradient
+
+            // Calculating indices for color stops to increase visibility
+            const colorStart = i / data.length;
+
             gradient.append('stop')
                 .attr('offset', '0%')
-                .attr('stop-color', d3.interpolateRainbow(i / (data.length + 1)));
-            gradient.append('stop')
-                .attr('offset', '100%')
-                .attr('stop-color', d3.interpolateRainbow((i + 1) / (data.length + 1)));
+                .attr('stop-color', d3.interpolateRainbow(colorStart)); // Ensuring colors start from a visible range
+
         });
+
 
         const pie = d3.pie()
             .sort(null)
