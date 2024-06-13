@@ -4,8 +4,8 @@ import * as d3 from 'd3';
 const PieChart = () => {
     const ref = useRef();
     const [data, setData] = useState([]);
-    const width = 960, height = 400;
-    const radius = Math.min(width, height) / 2;
+    const width = 500, height = 400;
+    const radius = Math.min(width, height) / 2.5;
 
     useEffect(() => {
         d3.csv('src/assets/data/VIETNAM_CAUSE_OF_DEATH_UNDER_FIVE_2021.csv').then(parsedData => {
@@ -30,14 +30,32 @@ const PieChart = () => {
 
         const svg = d3.select(ref.current)
             .attr('width', width)
-            .attr('height', height)
-            .append('g')
-            .attr('transform', `translate(${width / 2},${height / 2})`);
+            .attr('height', height);
 
         svg.selectAll('*').remove(); // Clear SVG to prevent overlap
 
+        const chartGroup = svg.append('g')
+            .attr('transform', `translate(${width / 2},${height / 2 + 20})`);
+
+        // Title
+        svg.append('text')
+            .attr('x', width / 2)
+            .attr('y', 30)
+            .attr('text-anchor', 'middle')
+            .attr('font-size', '20px')
+            .attr('font-weight', 'bold')
+            .text('Cause of Death in Vietnam (Under Five)');
+
+        // Subtitle
+        svg.append('text')
+            .attr('x', width / 2)
+            .attr('y', 50)
+            .attr('text-anchor', 'middle')
+            .attr('font-size', '16px')
+            .text('Proportion of Deaths by Cause in 2021');
+
         // Define a colorful gradient for each slice
-        const defs = svg.append('defs');
+        const defs = chartGroup.append('defs');
         data.forEach((d, i) => {
             const gradient = defs.append('linearGradient')
                 .attr('id', `gradient${i}`)
@@ -48,13 +66,16 @@ const PieChart = () => {
 
             // Calculating indices for color stops to increase visibility
             const colorStart = i / data.length;
+            const colorEnd = (i + 1) / data.length;
 
             gradient.append('stop')
                 .attr('offset', '0%')
                 .attr('stop-color', d3.interpolateRainbow(colorStart)); // Ensuring colors start from a visible range
 
+            gradient.append('stop')
+                .attr('offset', '100%')
+                .attr('stop-color', d3.interpolateRainbow(colorEnd)); // Ensuring colors end in a visible range
         });
-
 
         const pie = d3.pie()
             .sort(null)
@@ -68,7 +89,7 @@ const PieChart = () => {
             .outerRadius(radius)
             .innerRadius(radius * 0);
 
-        const slices = svg.append('g').attr('class', 'slices');
+        const slices = chartGroup.append('g').attr('class', 'slices');
 
         slices.selectAll('path')
             .data(pie(data))
@@ -82,7 +103,11 @@ const PieChart = () => {
                     .duration(200)
                     .attr('d', hoverArc)
                     .style('opacity', 1);
-                showTooltip(event, d);
+                tooltip
+                        .style('opacity', 1)
+                        .style('left', `${event.clientX}px`)
+                        .style('top', `${event.clientY}px`)
+                        .html(`<b>${d.data.label}</b><br>Proportion: ${d.data.value.toFixed(2)}%`);
             })
             .on('mouseout', function () {
                 d3.select(this)
@@ -90,31 +115,29 @@ const PieChart = () => {
                     .duration(200)
                     .attr('d', arc)
                     .style('opacity', 0.7);
-                hideTooltip();
+               tooltip.style('opacity', 0);
             })
-            .style('opacity', 0.7);
+            .style('opacity', 0.7)
+            .transition()
+            .duration(1000)
+            .attrTween('d', function(d) {
+                const i = d3.interpolate(d.startAngle + 0.1, d.endAngle);
+                return function(t) {
+                    d.endAngle = i(t);
+                    return arc(d);
+                };
+            });
 
-        function showTooltip(event, d) {
             const tooltip = d3.select('body').append('div')
-                .attr('class', 'tooltip')
-                .style('position', 'absolute')
-                .style('left', `${event.clientX}px`)
-                .style('top', `${event.clientY}px`)
-                .style('background', 'white')
-                .style('padding', '5px 10px')
-                .style('border', '1px solid black')
-                .style('border-radius', '5px')
-                .style('pointer-events', 'none')
-                .html(`${d.data.label}: <b>${d.data.value.toFixed(2)}%</b>`);
+            .attr('class', 'tooltip')
+            .style('position', 'absolute')
+            .style('background', 'white')
+            .style('padding', '5px 10px')
+            .style('border', '1px solid black')
+            .style('border-radius', '5px')
+            .style('pointer-events', 'none')
+            .style('font-size', '12px');
 
-            const bbox = tooltip.node().getBoundingClientRect();
-            tooltip.style('left', `${event.clientX - bbox.width}px`)
-                   .style('top', `${event.clientY - bbox.height - 10}px`);
-        }
-
-        function hideTooltip() {
-            d3.select('.tooltip').remove();
-        }
     }, [data, radius, width, height]);
 
     return <svg ref={ref}></svg>;

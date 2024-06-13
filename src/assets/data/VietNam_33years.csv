@@ -1,0 +1,166 @@
+Geographic area,Indicator,Series Name,TIME_PERIOD,OBS_VALUE,Observation Status,Unit of measure,REF_DATE,INTERVAL,LOWER_BOUND,UPPER_BOUND,Model Used
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1990-06,23.71576429,Normal value,"Deaths per 1,000 live births",1990.5,1,20.98478155,27.18021077,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1991-06,23.08536136,Normal value,"Deaths per 1,000 live births",1991.5,1,20.42854248,26.52810616,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1992-06,22.36460693,Normal value,"Deaths per 1,000 live births",1992.5,1,19.7894893,25.70119588,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1993-06,21.57844171,Normal value,"Deaths per 1,000 live births",1993.5,1,19.07416556,24.72823888,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1994-06,20.72896263,Normal value,"Deaths per 1,000 live births",1994.5,1,18.25816891,23.69351284,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1995-06,19.85970625,Normal value,"Deaths per 1,000 live births",1995.5,1,17.38382565,22.66460242,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1996-06,18.95273585,Normal value,"Deaths per 1,000 live births",1996.5,1,16.4543789,21.77020866,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1997-06,17.84606764,Normal value,"Deaths per 1,000 live births",1997.5,1,15.31457963,20.63272129,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1998-06,16.76820018,Normal value,"Deaths per 1,000 live births",1998.5,1,14.22862198,19.54273808,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,1999-06,15.83298961,Normal value,"Deaths per 1,000 live births",1999.5,1,13.29766733,18.5579433,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2000-06,15.01569608,Normal value,"Deaths per 1,000 live births",2000.5,1,12.45311257,17.69964035,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2001-06,14.32019094,Normal value,"Deaths per 1,000 live births",2001.5,1,11.7636596,16.98423514,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2002-06,13.73645327,Normal value,"Deaths per 1,000 live births",2002.5,1,11.23926753,16.33362899,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2003-06,13.22689134,Normal value,"Deaths per 1,000 live births",2003.5,1,10.84680214,15.73396893,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2004-06,12.82940659,Normal value,"Deaths per 1,000 live births",2004.5,1,10.53405951,15.25641158,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2005-06,12.52667586,Normal value,"Deaths per 1,000 live births",2005.5,1,10.32059638,14.83641258,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2006-06,12.28407379,Normal value,"Deaths per 1,000 live births",2006.5,1,10.19177338,14.46534492,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2007-06,12.10957823,Normal value,"Deaths per 1,000 live births",2007.5,1,10.14131578,14.16558229,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2008-06,11.96650781,Normal value,"Deaths per 1,000 live births",2008.5,1,10.14360961,13.92199635,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2009-06,11.84522353,Normal value,"Deaths per 1,000 live births",2009.5,1,10.1387632,13.77069279,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2010-06,11.74926319,Normal value,"Deaths per 1,000 live births",2010.5,1,10.10962536,13.62324811,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2011-06,11.64274563,Normal value,"Deaths per 1,000 live births",2011.5,1,9.981394769,13.53678812,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2012-06,11.53654954,Normal value,"Deaths per 1,000 live births",2012.5,1,9.821671469,13.50144899,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2013-06,11.4281209,Normal value,"Deaths per 1,000 live births",2013.5,1,9.642615618,13.42480001,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2014-06,11.31380431,Normal value,"Deaths per 1,000 live births",2014.5,1,9.453887586,13.40944077,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2015-06,11.21721062,Normal value,"Deaths per 1,000 live births",2015.5,1,9.293320227,13.35792481,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2016-06,11.10178144,Normal value,"Deaths per 1,000 live births",2016.5,1,9.080929896,13.37336584,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2017-06,10.99726724,Normal value,"Deaths per 1,000 live births",2017.5,1,8.890969786,13.35567655,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2018-06,10.88347084,Normal value,"Deaths per 1,000 live births",2018.5,1,8.677017493,13.329086,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2019-06,10.77739683,Normal value,"Deaths per 1,000 live births",2019.5,1,8.502583994,13.34488957,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2020-06,10.6707247,Normal value,"Deaths per 1,000 live births",2020.5,1,8.282635747,13.37915078,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2021-06,10.54179256,Normal value,"Deaths per 1,000 live births",2021.5,1,8.032445232,13.44323911,BNUR
+Viet Nam,Neonatal mortality rate,UN IGME estimate,2022-06,10.37770558,Normal value,"Deaths per 1,000 live births",2022.5,1,7.759193721,13.44731681,BNUR
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1990-06,2.632786722,Normal value,"Deaths per 1,000 children aged 10",1990.5,1,0.585215873,4.980200609,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1991-06,2.588026638,Normal value,"Deaths per 1,000 children aged 10",1991.5,1,0.667566831,4.73019246,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1992-06,2.549023372,Normal value,"Deaths per 1,000 children aged 10",1992.5,1,0.772460302,4.517719425,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1993-06,2.511172593,Normal value,"Deaths per 1,000 children aged 10",1993.5,1,0.845680422,4.330510339,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1994-06,2.468378876,Normal value,"Deaths per 1,000 children aged 10",1994.5,1,0.918641015,4.126771629,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1995-06,2.426668773,Normal value,"Deaths per 1,000 children aged 10",1995.5,1,0.964776687,3.951718122,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1996-06,2.38161892,Normal value,"Deaths per 1,000 children aged 10",1996.5,1,1.015696115,3.788502384,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1997-06,2.331963277,Normal value,"Deaths per 1,000 children aged 10",1997.5,1,1.052617823,3.642145565,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1998-06,2.283537766,Normal value,"Deaths per 1,000 children aged 10",1998.5,1,1.082672573,3.494484986,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,1999-06,2.235015564,Normal value,"Deaths per 1,000 children aged 10",1999.5,1,1.10994374,3.357052369,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2000-06,2.185978896,Normal value,"Deaths per 1,000 children aged 10",2000.5,1,1.123117701,3.240620934,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2001-06,2.13938684,Normal value,"Deaths per 1,000 children aged 10",2001.5,1,1.113074981,3.129495626,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2002-06,2.091592721,Normal value,"Deaths per 1,000 children aged 10",2002.5,1,1.119403438,3.021871214,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2003-06,2.048539637,Normal value,"Deaths per 1,000 children aged 10",2003.5,1,1.12596136,2.916151199,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2004-06,2.008793165,Normal value,"Deaths per 1,000 children aged 10",2004.5,1,1.135674037,2.815155025,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2005-06,1.969162162,Normal value,"Deaths per 1,000 children aged 10",2005.5,1,1.152336616,2.718164016,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2006-06,1.931683476,Normal value,"Deaths per 1,000 children aged 10",2006.5,1,1.179165259,2.638965342,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2007-06,1.899530971,Normal value,"Deaths per 1,000 children aged 10",2007.5,1,1.205854424,2.560593404,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2008-06,1.87112711,Normal value,"Deaths per 1,000 children aged 10",2008.5,1,1.229307145,2.476347547,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2009-06,1.8442308,Normal value,"Deaths per 1,000 children aged 10",2009.5,1,1.275837852,2.397792075,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2010-06,1.819682659,Normal value,"Deaths per 1,000 children aged 10",2010.5,1,1.312578128,2.326686399,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2011-06,1.797150165,Normal value,"Deaths per 1,000 children aged 10",2011.5,1,1.347545701,2.260304559,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2012-06,1.777777097,Normal value,"Deaths per 1,000 children aged 10",2012.5,1,1.364388828,2.208111491,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2013-06,1.761017597,Normal value,"Deaths per 1,000 children aged 10",2013.5,1,1.364545769,2.166610379,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2014-06,1.74431486,Normal value,"Deaths per 1,000 children aged 10",2014.5,1,1.352497447,2.137676756,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2015-06,1.726672205,Normal value,"Deaths per 1,000 children aged 10",2015.5,1,1.328722975,2.133192594,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2016-06,1.708199754,Normal value,"Deaths per 1,000 children aged 10",2016.5,1,1.289368977,2.143454483,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2017-06,1.692534943,Normal value,"Deaths per 1,000 children aged 10",2017.5,1,1.244921664,2.17368652,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2018-06,1.67508114,Normal value,"Deaths per 1,000 children aged 10",2018.5,1,1.184725268,2.216772369,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2019-06,1.655191917,Normal value,"Deaths per 1,000 children aged 10",2019.5,1,1.12199901,2.284121763,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2020-06,1.63407991,Normal value,"Deaths per 1,000 children aged 10",2020.5,1,1.064028215,2.367846395,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2021-06,1.61013437,Normal value,"Deaths per 1,000 children aged 10",2021.5,1,1.004637659,2.439345047,
+Viet Nam,Mortality rate age 10-14,UN IGME estimate,2022-06,1.583864478,Normal value,"Deaths per 1,000 children aged 10",2022.5,1,0.951803123,2.483604803,
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1990-06,5.861088126,Normal value,"Deaths per 1,000 youths aged 15",1990.5,1,4.440414851,7.699076611,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1991-06,5.654949179,Normal value,"Deaths per 1,000 youths aged 15",1991.5,1,4.304071475,7.403020535,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1992-06,5.458871839,Normal value,"Deaths per 1,000 youths aged 15",1992.5,1,4.151847766,7.109149644,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1993-06,5.24436552,Normal value,"Deaths per 1,000 youths aged 15",1993.5,1,3.982299173,6.814161617,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1994-06,5.046566257,Normal value,"Deaths per 1,000 youths aged 15",1994.5,1,3.828356657,6.515170533,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1995-06,4.86896331,Normal value,"Deaths per 1,000 youths aged 15",1995.5,1,3.68989197,6.266646271,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1996-06,4.699956792,Normal value,"Deaths per 1,000 youths aged 15",1996.5,1,3.561893558,6.029052752,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1997-06,4.553660529,Normal value,"Deaths per 1,000 youths aged 15",1997.5,1,3.46935619,5.792798344,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1998-06,4.42456266,Normal value,"Deaths per 1,000 youths aged 15",1998.5,1,3.390213262,5.593247345,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,1999-06,4.311103117,Normal value,"Deaths per 1,000 youths aged 15",1999.5,1,3.325089968,5.4291854,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2000-06,4.217218327,Normal value,"Deaths per 1,000 youths aged 15",2000.5,1,3.27862285,5.276102146,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2001-06,4.137484336,Normal value,"Deaths per 1,000 youths aged 15",2001.5,1,3.241308223,5.139203155,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2002-06,4.058207006,Normal value,"Deaths per 1,000 youths aged 15",2002.5,1,3.218547278,5.007266761,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2003-06,3.989438809,Normal value,"Deaths per 1,000 youths aged 15",2003.5,1,3.20818014,4.873230505,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2004-06,3.924023928,Normal value,"Deaths per 1,000 youths aged 15",2004.5,1,3.194715316,4.75777362,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2005-06,3.856177754,Normal value,"Deaths per 1,000 youths aged 15",2005.5,1,3.184850413,4.62753412,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2006-06,3.785638307,Normal value,"Deaths per 1,000 youths aged 15",2006.5,1,3.170833231,4.498367464,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2007-06,3.719539686,Normal value,"Deaths per 1,000 youths aged 15",2007.5,1,3.155791913,4.373103314,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2008-06,3.645308776,Normal value,"Deaths per 1,000 youths aged 15",2008.5,1,3.136194555,4.246077628,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2009-06,3.566835896,Normal value,"Deaths per 1,000 youths aged 15",2009.5,1,3.100982566,4.121950531,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2010-06,3.490581276,Normal value,"Deaths per 1,000 youths aged 15",2010.5,1,3.049891634,4.003746827,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2011-06,3.408507874,Normal value,"Deaths per 1,000 youths aged 15",2011.5,1,2.994147754,3.885873008,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2012-06,3.333273451,Normal value,"Deaths per 1,000 youths aged 15",2012.5,1,2.938503537,3.783910363,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2013-06,3.258672439,Normal value,"Deaths per 1,000 youths aged 15",2013.5,1,2.874304164,3.693009364,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2014-06,3.187615563,Normal value,"Deaths per 1,000 youths aged 15",2014.5,1,2.807045895,3.61753583,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2015-06,3.121518331,Normal value,"Deaths per 1,000 youths aged 15",2015.5,1,2.732700963,3.562735715,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2016-06,3.057527078,Normal value,"Deaths per 1,000 youths aged 15",2016.5,1,2.649864202,3.524662701,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2017-06,2.999158372,Normal value,"Deaths per 1,000 youths aged 15",2017.5,1,2.559722135,3.505151141,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2018-06,2.940589797,Normal value,"Deaths per 1,000 youths aged 15",2018.5,1,2.454422551,3.490041411,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2019-06,2.882105548,Normal value,"Deaths per 1,000 youths aged 15",2019.5,1,2.349850191,3.48342313,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2020-06,2.821177551,Normal value,"Deaths per 1,000 youths aged 15",2020.5,1,2.237635954,3.479573294,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2021-06,2.761860584,Normal value,"Deaths per 1,000 youths aged 15",2021.5,1,2.141398892,3.483041877,B3
+Viet Nam,Mortality rate age 15-19,UN IGME estimate,2022-06,2.700012642,Normal value,"Deaths per 1,000 youths aged 15",2022.5,1,2.045173506,3.468099339,B3
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1990-06,15.12237463,Normal value,"Deaths per 1,000 children aged 1",1990.5,1,13.32463286,17.20599266,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1991-06,13.99493189,Normal value,"Deaths per 1,000 children aged 1",1991.5,1,12.31014918,15.95103592,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1992-06,12.84894512,Normal value,"Deaths per 1,000 children aged 1",1992.5,1,11.29269807,14.69912556,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1993-06,11.76326125,Normal value,"Deaths per 1,000 children aged 1",1993.5,1,10.27842889,13.49054032,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1994-06,10.73750787,Normal value,"Deaths per 1,000 children aged 1",1994.5,1,9.323007276,12.39996214,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1995-06,9.82225749,Normal value,"Deaths per 1,000 children aged 1",1995.5,1,8.40833491,11.4162015,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1996-06,8.978576116,Normal value,"Deaths per 1,000 children aged 1",1996.5,1,7.536080663,10.53461274,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1997-06,8.234080761,Normal value,"Deaths per 1,000 children aged 1",1997.5,1,6.804511514,9.818577417,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1998-06,7.566825734,Normal value,"Deaths per 1,000 children aged 1",1998.5,1,6.165285242,9.132993373,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,1999-06,7.010891337,Normal value,"Deaths per 1,000 children aged 1",1999.5,1,5.693052169,8.559961652,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2000-06,6.543122571,Normal value,"Deaths per 1,000 children aged 1",2000.5,1,5.312108161,8.053462766,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2001-06,6.12983167,Normal value,"Deaths per 1,000 children aged 1",2001.5,1,4.995474859,7.55847801,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2002-06,5.840248242,Normal value,"Deaths per 1,000 children aged 1",2002.5,1,4.742085146,7.138012079,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2003-06,5.59289793,Normal value,"Deaths per 1,000 children aged 1",2003.5,1,4.58349378,6.772057778,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2004-06,5.383247391,Normal value,"Deaths per 1,000 children aged 1",2004.5,1,4.459897503,6.433836603,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2005-06,5.208144383,Normal value,"Deaths per 1,000 children aged 1",2005.5,1,4.37628768,6.133931316,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2006-06,5.068970001,Normal value,"Deaths per 1,000 children aged 1",2006.5,1,4.331912376,5.903294482,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2007-06,4.946793901,Normal value,"Deaths per 1,000 children aged 1",2007.5,1,4.298747223,5.702280601,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2008-06,4.848602988,Normal value,"Deaths per 1,000 children aged 1",2008.5,1,4.297393991,5.522334833,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2009-06,4.773235922,Normal value,"Deaths per 1,000 children aged 1",2009.5,1,4.310604514,5.358447755,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2010-06,4.716694648,Normal value,"Deaths per 1,000 children aged 1",2010.5,1,4.320096983,5.203569361,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2011-06,4.666048474,Normal value,"Deaths per 1,000 children aged 1",2011.5,1,4.327765182,5.074118448,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2012-06,4.618659286,Normal value,"Deaths per 1,000 children aged 1",2012.5,1,4.324289497,4.965541013,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2013-06,4.576271786,Normal value,"Deaths per 1,000 children aged 1",2013.5,1,4.308079492,4.873601826,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2014-06,4.536102269,Normal value,"Deaths per 1,000 children aged 1",2014.5,1,4.284331569,4.799756308,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2015-06,4.494575862,Normal value,"Deaths per 1,000 children aged 1",2015.5,1,4.252177772,4.744012823,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2016-06,4.451542519,Normal value,"Deaths per 1,000 children aged 1",2016.5,1,4.21506006,4.707914821,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2017-06,4.412201475,Normal value,"Deaths per 1,000 children aged 1",2017.5,1,4.168252792,4.687777766,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2018-06,4.374215096,Normal value,"Deaths per 1,000 children aged 1",2018.5,1,4.105941025,4.676606691,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2019-06,4.335981005,Normal value,"Deaths per 1,000 children aged 1",2019.5,1,4.029115392,4.690797646,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2020-06,4.296482716,Normal value,"Deaths per 1,000 children aged 1",2020.5,1,3.929899423,4.730112976,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2021-06,4.249357631,Normal value,"Deaths per 1,000 children aged 1",2021.5,1,3.820685179,4.787130633,
+Viet Nam,Child Mortality rate age 1-4,UN IGME estimate,2022-06,4.193052376,Normal value,"Deaths per 1,000 children aged 1",2022.5,1,3.690152267,4.85621016,
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1990-06,7.356795026,Normal value,"Deaths per 1,000 children aged 5",1990.5,1,6.25752085,8.614796085,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1991-06,6.898064957,Normal value,"Deaths per 1,000 children aged 5",1991.5,1,5.875028401,8.078662326,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1992-06,6.455555446,Normal value,"Deaths per 1,000 children aged 5",1992.5,1,5.5135587,7.55450548,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1993-06,6.040002854,Normal value,"Deaths per 1,000 children aged 5",1993.5,1,5.17591966,7.074203376,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1994-06,5.645980322,Normal value,"Deaths per 1,000 children aged 5",1994.5,1,4.846601176,6.611732431,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1995-06,5.282317698,Normal value,"Deaths per 1,000 children aged 5",1995.5,1,4.535837162,6.173146143,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1996-06,4.931661445,Normal value,"Deaths per 1,000 children aged 5",1996.5,1,4.241508948,5.764904029,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1997-06,4.602859095,Normal value,"Deaths per 1,000 children aged 5",1997.5,1,3.959202179,5.369819204,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1998-06,4.294579011,Normal value,"Deaths per 1,000 children aged 5",1998.5,1,3.690339568,5.002787298,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,1999-06,4.002565543,Normal value,"Deaths per 1,000 children aged 5",1999.5,1,3.446979824,4.657259733,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2000-06,3.738020238,Normal value,"Deaths per 1,000 children aged 5",2000.5,1,3.223342249,4.341527672,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2001-06,3.49267278,Normal value,"Deaths per 1,000 children aged 5",2001.5,1,3.019719773,4.042231178,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2002-06,3.264740918,Normal value,"Deaths per 1,000 children aged 5",2002.5,1,2.817981926,3.764843413,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2003-06,3.05170112,Normal value,"Deaths per 1,000 children aged 5",2003.5,1,2.63319485,3.507204725,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2004-06,2.858508305,Normal value,"Deaths per 1,000 children aged 5",2004.5,1,2.464814517,3.272328583,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2005-06,2.68079398,Normal value,"Deaths per 1,000 children aged 5",2005.5,1,2.310317488,3.055292753,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2006-06,2.516291398,Normal value,"Deaths per 1,000 children aged 5",2006.5,1,2.170576171,2.859000202,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2007-06,2.365339231,Normal value,"Deaths per 1,000 children aged 5",2007.5,1,2.04203961,2.683663293,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2008-06,2.227268818,Normal value,"Deaths per 1,000 children aged 5",2008.5,1,1.926945379,2.523116266,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2009-06,2.100577788,Normal value,"Deaths per 1,000 children aged 5",2009.5,1,1.8205076,2.381247408,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2010-06,1.982867823,Normal value,"Deaths per 1,000 children aged 5",2010.5,1,1.722937318,2.247948977,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2011-06,1.876036517,Normal value,"Deaths per 1,000 children aged 5",2011.5,1,1.632978542,2.12838292,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2012-06,1.777437702,Normal value,"Deaths per 1,000 children aged 5",2012.5,1,1.551275039,2.019641141,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2013-06,1.690131229,Normal value,"Deaths per 1,000 children aged 5",2013.5,1,1.474447308,1.927324469,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2014-06,1.608371803,Normal value,"Deaths per 1,000 children aged 5",2014.5,1,1.396865342,1.843837567,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2015-06,1.530639779,Normal value,"Deaths per 1,000 children aged 5",2015.5,1,1.317204913,1.769294887,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2016-06,1.458651171,Normal value,"Deaths per 1,000 children aged 5",2016.5,1,1.239442888,1.703183405,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2017-06,1.388833429,Normal value,"Deaths per 1,000 children aged 5",2017.5,1,1.163473235,1.647219356,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2018-06,1.321858669,Normal value,"Deaths per 1,000 children aged 5",2018.5,1,1.086425946,1.596000096,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2019-06,1.253591935,Normal value,"Deaths per 1,000 children aged 5",2019.5,1,1.01032518,1.547596399,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2020-06,1.189882019,Normal value,"Deaths per 1,000 children aged 5",2020.5,1,0.940276609,1.503046317,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2021-06,1.129367892,Normal value,"Deaths per 1,000 children aged 5",2021.5,1,0.876148932,1.457738092,B3
+Viet Nam,Mortality rate age 5-9,UN IGME estimate,2022-06,1.07638409,Normal value,"Deaths per 1,000 children aged 5",2022.5,1,0.818131645,1.418093319,B3

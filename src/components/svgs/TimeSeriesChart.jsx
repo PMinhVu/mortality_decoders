@@ -1,19 +1,21 @@
 import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-// eslint-disable-next-line react/prop-types
 const TimeSeries = () => {
     const svgRef = useRef();
 
     useEffect(() => {
         const svg = d3.select(svgRef.current);
-        svg.selectAll('*').remove(); // Clear the previous data content
+        svg.selectAll('*').remove();
 
-        const width = 800;
-        const height = 600;
-        const margin = { top: 50, right: 30, bottom: 70, left: 20 }; // Adjusted bottom margin for legend
+        const width = 500;
+        const height = 550;
+        const margin = { top: 50, right: 30, bottom: 70, left: 50 };
 
         const showTooltips = (dotPositions, tooltipData, colors) => {
+            const tooltipHeight = 20;
+            const tooltipMargin = 5;
+
             tooltipData.forEach((d, index) => {
                 if (d) {
                     const tooltipId = `tooltip-${index}`;
@@ -21,44 +23,48 @@ const TimeSeries = () => {
 
                     if (tooltip.empty()) {
                         tooltip = d3
-                            .select('body')
+                            .select(svgRef.current.parentNode)
                             .append('div')
                             .attr('id', tooltipId)
                             .attr('class', 'tooltip')
                             .style('position', 'absolute')
                             .style('padding', '5px')
-                            .style('background', 'lightsteelblue')
-                            .style('border', '0px')
-                            .style('border-radius', '8px')
+                            .style('background', 'rgba(0, 0, 0, 0.8)')
+                            .style('color', '#fff')
+                            .style('border-radius', '4px')
                             .style('pointer-events', 'none')
                             .style('font', '12px sans-serif')
                             .style('opacity', 0);
                     }
 
-                    tooltip.transition().duration(200).style('opacity', 0.9);
+                    tooltip.transition().duration(100).style('opacity', 0.9);
                     tooltip
                         .html(
-                            `<b>Year: </b><b style="color: ${colors(index)}">${d.TIME_PERIOD.split('-')[0]}</b><br/><b>Value: <b><b style="color: ${colors(index)}">${(+d.OBS_VALUE).toFixed(2)}</b>`,
+                            `<b>Year: </b><b style="color: ${colors(index)}">${d.TIME_PERIOD.split('-')[0]} </b><b>Value: <b><b style="color: ${colors(index)}">${(+d.OBS_VALUE).toFixed(2)}</b>`,
                         )
-                        .style('left', `${dotPositions[index].x + 20}px`)
-                        .style('top', `${dotPositions[index].y - 10}px`);
+                        .style('left', `${dotPositions[index].x + 10}px`)
+                        .style('top', `${dotPositions[index].y - (tooltipHeight * index) - (tooltipMargin * index)}px`)
+                        .style('transform', 'translateX(-50%)')
+                        .style('width', 'auto')
+                        .style('height', 'auto')
+                        .style('white-space', 'nowrap');
                 }
             });
         };
 
         const hideTooltips = () => {
-            d3.selectAll('.tooltip').transition().duration(200).style('opacity', 0);
+            d3.selectAll('.tooltip').transition().duration(100).style('opacity', 0).remove();
         };
 
-        d3.csv('src/assets/data/mortality_for_all.csv').then((data) => {
-            const parseDate = d3.timeParse('%Y-%M');
+        d3.csv('src/assets/data/VietNam_33years.csv').then((data) => {
+            const parseDate = d3.timeParse('%Y-%m');
 
             const uniqueIndicators = [...new Set(data.map((d) => d.Indicator))];
 
             const x = d3
                 .scaleTime()
-                .domain(d3.extent(data, (d) => parseDate(d.TIME_PERIOD)))
-                .range([margin.left, width - margin.right]);
+                .domain([new Date(1990, 0, 1), new Date(2022, 11, 31)])
+                .range([margin.left - 5, width - margin.right]);
 
             const y = d3
                 .scaleLinear()
@@ -67,10 +73,9 @@ const TimeSeries = () => {
                 .range([height - margin.bottom, margin.top]);
 
             const xAxis = (g) =>
-                g.attr('transform', `translate(0,${height - margin.bottom})`).call(
-                    d3
-                        .axisBottom(x)
-                        .ticks(width / 80)
+                g.attr('transform', `translate(5,${height - margin.bottom})`).call(
+                    d3.axisBottom(x)
+                        .ticks(d3.timeYear.every(5))
                         .tickFormat(d3.timeFormat('%Y'))
                         .tickSizeOuter(0),
                 );
@@ -80,10 +85,10 @@ const TimeSeries = () => {
             svg.append('g').call(xAxis);
             svg.append('g').call(yAxis);
 
-            const line = d3
-                .line()
+            const line = d3.line()
                 .x((d) => x(parseDate(d.TIME_PERIOD)))
-                .y((d) => y(+d.OBS_VALUE));
+                .y((d) => y(+d.OBS_VALUE))
+                .curve(d3.curveMonotoneX); // Smooth curve
 
             const colors = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -95,9 +100,17 @@ const TimeSeries = () => {
                     .attr('fill', 'none')
                     .attr('stroke', colors(index))
                     .attr('stroke-width', 1.5)
-                    .attr('d', line);
+                    .attr('d', line)
+                    .attr("stroke-dasharray", function () {
+                        return this.getTotalLength();
+                    })
+                    .attr("stroke-dashoffset", function () {
+                        return this.getTotalLength();
+                    })
+                    .transition()
+                    .duration(2000)
+                    .attr("stroke-dashoffset", 0);
 
-                // Add vertical lines
                 svg.selectAll(`.vertical-line-${index}`)
                     .data(filteredData)
                     .enter()
@@ -107,12 +120,11 @@ const TimeSeries = () => {
                     .attr('x2', (d) => x(parseDate(d.TIME_PERIOD)))
                     .attr('y1', margin.top)
                     .attr('y2', height - margin.bottom)
-                    .attr('stroke', 'lightgray')
-                    .attr('stroke-width', 2)
-                    .attr('stroke-dasharray', '4,4')
-                    .style('opacity', 0); // Initially hidden
+                    .attr('stroke', 'rgba(0, 0, 0, 0.1)')
+                    .attr('stroke-width', 1)
+                    .attr('stroke-dasharray', '2,2')
+                    .style('opacity', 0);
 
-                // Add dots
                 svg.selectAll(`.dot-${index}`)
                     .data(filteredData)
                     .enter()
@@ -120,16 +132,18 @@ const TimeSeries = () => {
                     .attr('class', `dot-${index}`)
                     .attr('cx', (d) => x(parseDate(d.TIME_PERIOD)))
                     .attr('cy', (d) => y(+d.OBS_VALUE))
-                    .attr('r', 5)
+                    .attr('r', 4)
                     .attr('fill', colors(index))
-                    .style('opacity', 0.8)
+                    .style('opacity', 0)
                     .on('mouseover', function (event, d) {
                         const year = d.TIME_PERIOD;
                         const hoveredDots = d3.selectAll('circle')
                             .filter((circleData) => circleData.TIME_PERIOD === year)
                             .attr('r', 6)
-                            .attr('fill', 'orange')
-                            .attr('stroke', 'black');
+                            .attr('fill', colors(index))
+                            .attr('stroke', '#fff')
+                            .attr('stroke-width', 2)
+                            .style('opacity', 1);
     
                         const tooltipData = uniqueIndicators.map((indicator) => {
                             const indicatorData = data.find(
@@ -145,19 +159,18 @@ const TimeSeries = () => {
 
                         showTooltips(dotPositions, tooltipData, colors);
                     
-                        if (new Date(d.TIME_PERIOD).getFullYear() !== 2012) {
-                            svg.selectAll(`.vertical-line-${index}`)
-                                .filter((lineData) => lineData.TIME_PERIOD === year)
-                                .style('opacity', 0.8);
-                        }
+                        svg.selectAll(`.vertical-line-${index}`)
+                            .filter((lineData) => lineData.TIME_PERIOD === year)
+                            .style('opacity', 0.8);
                     })
                     .on('mouseout', function () {
                         const year = d3.select(this).datum().TIME_PERIOD;
                         d3.selectAll('circle')
                             .filter((circleData) => circleData.TIME_PERIOD === year)
-                            .attr('r', 5)
+                            .attr('r', 4)
                             .attr('fill', (circleData, circleIndex) => colors(circleIndex))
-                            .attr('stroke', 'none');
+                            .attr('stroke', 'none')
+                            .style('opacity', 0);
     
                         hideTooltips();
     
@@ -165,14 +178,13 @@ const TimeSeries = () => {
                     });
             });
 
-            // Add legend
             const legend = svg
                 .append('g')
                 .attr('class', 'legend')
-                .attr('transform', `translate(${margin.left}, ${height - margin.bottom + 30})`);
+                .attr('transform', `translate(${width - margin.right - 150}, ${margin.top})`);
 
             uniqueIndicators.forEach((indicator, index) => {
-                const legendRow = legend.append('g').attr('transform', `translate(${index * 150}, 0)`);
+                const legendRow = legend.append('g').attr('transform', `translate(0, ${index * 20})`);
 
                 legendRow
                     .append('line')
@@ -183,15 +195,14 @@ const TimeSeries = () => {
                     .attr('stroke', colors(index))
                     .attr('stroke-width', 2);
 
-                legendRow.append('text').attr('x', 25).attr('y', 10).text(indicator).attr('font-size', '12px');
+                legendRow.append('text').attr('x', 25).attr('y', 10).text(indicator).attr('font-size', '10px');
             });
 
-            // Add chart title
             svg.append('text')
                 .attr('x', width / 2)
                 .attr('y', margin.top / 2)
                 .attr('text-anchor', 'middle')
-                .attr('font-size', '20px')
+                .attr('font-size', '15px')
                 .attr('font-weight', 'bold')
                 .text(`Time Series Data for Viet Nam`);
         }).catch(error => {
@@ -201,7 +212,7 @@ const TimeSeries = () => {
 
     return (
         <div>
-            <svg ref={svgRef} width={800} height={600}></svg>
+            <svg ref={svgRef} width={500} height={550}></svg>
         </div>
     );
 };
