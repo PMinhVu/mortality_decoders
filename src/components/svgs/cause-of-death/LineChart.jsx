@@ -9,7 +9,7 @@ const LineChart = () => {
     const margin = { top: 50, right: 100, bottom: 100, left: 60 }; // Adjusted top margin for the title
 
     useEffect(() => {
-        d3.csv('src/assets/data/CAUSE_OF_DEATH_IN_PERIOD_YEARS.csv')
+        d3.csv('src/assets/data/Cause_Of_Death_In_Period_Years.csv')
             .then((parsedData) => {
                 const formattedData = parsedData.map((d) => ({
                     cause: d.CAUSE_OF_DEATH,
@@ -193,7 +193,7 @@ const LineChart = () => {
             .attr('x', (width - margin.left - margin.right) / 2)
             .attr('y', -10)
             .attr('text-anchor', 'middle')
-            .style('font-size', '15px')
+            .style('font-size', '20px')
             .style('font-weight', 'bold')
             .text('Three lines of the highest proportion in causes of death');
     }, [data, margin.bottom, margin.left, margin.right, margin.top]);

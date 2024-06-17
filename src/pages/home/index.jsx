@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
-import styles from './Home.module.scss';
-import SphereWorldMap from '@components/svgs/3DWorldMap.jsx';
-import PlainWorldMap from '@components/svgs/2DWorldMap.jsx';
+import styles from './index.module.scss';
+import SphereWorldMap from '@components/svgs/home/3DWorldMap.jsx';
+import PlainWorldMap from '@components/svgs/home/2DWorldMap.jsx';
 import * as d3 from 'd3';
 
 const cx = classNames.bind(styles);
@@ -127,4 +127,6 @@ const Home = () => {
     );
 };
 
+
 export default Home;
+

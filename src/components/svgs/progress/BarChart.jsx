@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-const ProgressBarChart = () => {
+const BarChart = () => {
     const ref = useRef();
 
     useEffect(() => {
@@ -61,7 +61,7 @@ const ProgressBarChart = () => {
                     .axisLeft(y)
                     .tickSize(-width + margin.left + margin.right)
                     .tickFormat('')
-                    .ticks(5);
+                    .ticks(10);
                 svg.append('g')
                     .attr('class', 'grid')
                     .attr('transform', `translate(${margin.left},0)`)
@@ -118,8 +118,7 @@ const ProgressBarChart = () => {
                         tooltip
                             .style('opacity', 1)
                             .style('left', `${event.pageX + 10}px`)
-                            .style('top', `${event.pageY - 28}px`)
-                            .html(`
+                            .style('top', `${event.pageY - 28}px`).html(`
                                 <div style="background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                                     <h4 style="margin: 0; font-size: 14px;">${d[1][0].area}</h4>
                                     <p style="margin: 0; font-size: 12px;">Year: ${d[0]}</p>
@@ -245,7 +244,7 @@ const ProgressBarChart = () => {
                     .attr('x', width / 2)
                     .attr('y', margin.top / 2)
                     .attr('text-anchor', 'middle')
-                    .attr('font-size', '16px')
+                    .attr('font-size', '20px')
                     .attr('font-weight', 'bold')
                     .text('Mortality Rate Comparison (1990, 2000, 2010, 2020)');
 
@@ -267,4 +266,4 @@ const ProgressBarChart = () => {
     return <svg ref={ref} width={600} height={600}></svg>;
 };
 
-export default ProgressBarChart;
+export default BarChart;

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 
-const MortalityComparisonBarChart = () => {
+const CustomBarChart = () => {
     const svgRef = useRef();
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const MortalityComparisonBarChart = () => {
         const indicatorType = ['Mortality rate 1-59 months', 'Neonatal mortality rate'];
         Promise.all([
             d3.csv('/src/assets/data/VN_World_East_Mortality.csv'),
-            d3.csv('/src/assets/data/VN_World_East_Neonatal_mortality.csv'),
+            d3.csv('/src/assets/data/VN_World_East_Neonatal_Mortality.csv'),
         ])
             .then(([overallData, neonatalData]) => {
                 const combinedData = [];
@@ -95,8 +95,7 @@ const MortalityComparisonBarChart = () => {
                                 .duration(1000)
                                 .attr('y2', y(dataPoint.rate));
 
-                            svg
-                                .append(type === indicatorType[0] ? 'circle' : 'rect')
+                            svg.append(type === indicatorType[0] ? 'circle' : 'rect')
                                 .attr(type === indicatorType[0] ? 'cx' : 'x', x0(area) + x1(type) + x1.bandwidth() / 2)
                                 .attr(type === indicatorType[0] ? 'cy' : 'y', y(0))
                                 .attr('width', type === indicatorType[1] ? 10 : null)
@@ -122,7 +121,12 @@ const MortalityComparisonBarChart = () => {
                                 .attr('pointer-events', 'all')
                                 .on('mouseover', function (event) {
                                     tooltip.transition().duration(200).style('opacity', 0.9);
-                                    tooltip.html(`<strong>${area}</strong>: ${dataPoint.rate.toFixed(2)} per 1,000 live births`)
+                                    tooltip
+                                        .html(
+                                            `<strong>${area}</strong>: ${dataPoint.rate.toFixed(
+                                                2,
+                                            )} per 1,000 live births`,
+                                        )
                                         .style('left', `${event.pageX + 10}px`)
                                         .style('top', `${event.pageY - 28}px`);
                                 })
@@ -136,15 +140,17 @@ const MortalityComparisonBarChart = () => {
                         }
                     });
                 });
-                const tooltip = d3.select('body').append('div')
-            .style('position', 'absolute')
-            .style('opacity', 0)
-            .style('background', '#fff')
-            .style('border', '1px solid #ccc')
-            .style('padding', '10px')
-            .style('pointer-events', 'none')
-            .style('border-radius', '4px')
-            .style('font-size', '12px');
+                const tooltip = d3
+                    .select('body')
+                    .append('div')
+                    .style('position', 'absolute')
+                    .style('opacity', 0)
+                    .style('background', '#fff')
+                    .style('border', '1px solid #ccc')
+                    .style('padding', '10px')
+                    .style('pointer-events', 'none')
+                    .style('border-radius', '4px')
+                    .style('font-size', '12px');
 
                 const legend = svg
                     .append('g')
@@ -180,7 +186,7 @@ const MortalityComparisonBarChart = () => {
                     .attr('x', width / 2)
                     .attr('y', margin.top / 2)
                     .attr('text-anchor', 'middle')
-                    .attr('font-size', '15px')
+                    .attr('font-size', '20px')
                     .attr('font-weight', 'bold')
                     .text('Comparison of Mortality Rates for the Two Age Groups with the Highest Rates');
 
@@ -206,4 +212,4 @@ const MortalityComparisonBarChart = () => {
     );
 };
 
-export default MortalityComparisonBarChart;
+export default CustomBarChart;
