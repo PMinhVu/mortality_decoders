@@ -1,6 +1,6 @@
 // Layout.jsx
 import { BrowserRouter as Router } from 'react-router-dom';
-import Sidebar from '../components/sidebar/Sidebar';
+import Sidebar from '../components/sidebar';
 import Routers from '../routers/Routers';
 
 const Layout = () => {

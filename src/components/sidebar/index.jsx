@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import classNames from 'classnames/bind';
-import styles from './Sidebar.module.scss';
+import styles from './index.module.scss';
 import Logo from '../../assets/images/logo.png';
 
 const cx = classNames.bind(styles);
