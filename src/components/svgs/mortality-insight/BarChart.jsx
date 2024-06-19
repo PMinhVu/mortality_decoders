@@ -147,7 +147,7 @@ const BarChart = () => {
                     .attr('text-anchor', 'middle')
                     .attr('font-size', '16px')
                     .attr('font-weight', 'bold')
-                    .text(`Distribution of Mortality Rates by Age Group in Vietnam in 2021`);
+                    .text(`Distribution of Mortality Rates by Age Group in Vietnam in 2022`);
 
                 // Add x-axis label
                 svg.append('text')

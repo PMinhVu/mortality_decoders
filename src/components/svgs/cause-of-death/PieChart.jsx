@@ -44,18 +44,12 @@ const PieChart = () => {
         // Title
         svg.append('text')
             .attr('x', width / 2)
-            .attr('y', 30)
-            .attr('text-anchor', 'middle')
-            .attr('font-size', '18px')
-            .attr('font-weight', 'bold')
-            .text('Distribution of Mortality Causes');
-        svg.append('text')
-            .attr('x', width / 2)
             .attr('y', 50)
             .attr('text-anchor', 'middle')
             .attr('font-size', '18px')
             .attr('font-weight', 'bold')
-            .text('in Vietnamese Children Under Five in 2021');
+            .text('Causes of death in Vietnamese Children Under Five in 2022');
+        
 
         const colorScale = [
             '#7f7f7f',

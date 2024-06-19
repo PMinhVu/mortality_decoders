@@ -198,7 +198,7 @@ const LineChart = () => {
             .attr('text-anchor', 'middle')
             .style('font-size', '18px')
             .style('font-weight', 'bold')
-            .text('Trends in Leading Causes of Child Mortality in Vietnam, 2000-2022');
+            .text('Trends in 3 leading Causes of death in Vietnam, 2000-2022');
     }, [data, margin.bottom, margin.left, margin.right, margin.top]);
 
     return (

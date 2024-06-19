@@ -189,7 +189,7 @@ const CustomBarChart = () => {
                     .attr('font-size', '18px')
                     .attr('font-weight', 'bold')
                     .text(
-                        'Comparative Neonatal and Post-Neonatal Mortality Rates',
+                        'Comparative Neonatal and 1-4 Age Groups Mortality Rates',
                     );
                 svg.append('text')
                     .attr('x', width / 2)
@@ -198,7 +198,7 @@ const CustomBarChart = () => {
                     .attr('font-size', '18px')
                     .attr('font-weight', 'bold')
                     .text(
-                        'in Vietnam, East Asia and Pacific, and Worldwide',
+                        'in Vietnam, East Asia and Pacific, and the World',
                     );
 
                 // Add y-axis label

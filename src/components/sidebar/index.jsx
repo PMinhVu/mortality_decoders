@@ -21,7 +21,7 @@ const navLinks = [
     },
     {
         path: '/progress',
-        content: 'Progress',
+        content: 'Comparative Analysis',
     },
 ];
 
