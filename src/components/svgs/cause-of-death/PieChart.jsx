@@ -22,6 +22,9 @@ const PieChart = () => {
                     })
                     .filter((d) => d.value >= 0);
 
+                // Sort data by value in ascending order
+                newData.sort((a, b) => a.value - b.value);
+
                 setData(newData);
             })
             .catch((error) => {
@@ -43,37 +46,28 @@ const PieChart = () => {
             .attr('x', width / 2)
             .attr('y', 30)
             .attr('text-anchor', 'middle')
-            .attr('font-size', '20px')
+            .attr('font-size', '18px')
             .attr('font-weight', 'bold')
-            .text('Cause of Death in Vietnam (Under Five)');
-
-        // Subtitle
+            .text('Distribution of Mortality Causes');
         svg.append('text')
             .attr('x', width / 2)
             .attr('y', 50)
             .attr('text-anchor', 'middle')
-            .attr('font-size', '16px')
-            .text('Proportion of Deaths by Cause in 2021');
+            .attr('font-size', '18px')
+            .attr('font-weight', 'bold')
+            .text('in Vietnamese Children Under Five in 2021');
 
-        // Define a colorful gradient for each slice
-        const defs = chartGroup.append('defs');
-        data.forEach((d, i) => {
-            const gradient = defs
-                .append('linearGradient')
-                .attr('id', `gradient${i}`)
-                .attr('x1', '0%')
-                .attr('y1', '0%')
-                .attr('x2', '100%')
-                .attr('y2', '0%'); // Horizontal gradient
-
-            // Calculating indices for color stops to increase visibility
-            const colorStart = i / data.length;
-            const colorEnd = (i + 1) / data.length;
-
-            gradient.append('stop').attr('offset', '0%').attr('stop-color', d3.interpolateRainbow(colorStart)); // Ensuring colors start from a visible range
-
-            gradient.append('stop').attr('offset', '100%').attr('stop-color', d3.interpolateRainbow(colorEnd)); // Ensuring colors end in a visible range
-        });
+        const colorScale = [
+            '#7f7f7f',
+            '#bcbd22',
+            '#964b00',
+            '#d62728',
+            '#9467bd',
+            '#e377c2',
+            '#1f77b4',
+            '#2ca02c',
+            '#ff7f0e',
+        ];
 
         const pie = d3
             .pie()
@@ -99,7 +93,7 @@ const PieChart = () => {
             .append('path')
             .attr('class', 'slice')
             .attr('d', arc)
-            .attr('fill', (d, i) => `url(#gradient${i})`)
+            .attr('fill', (d, i) => colorScale[i % colorScale.length])
             .on('mouseover', function (event, d) {
                 d3.select(this).transition().duration(200).attr('d', hoverArc).style('opacity', 1);
                 tooltip

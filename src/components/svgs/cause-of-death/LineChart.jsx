@@ -194,11 +194,11 @@ const LineChart = () => {
         // Add chart title
         svg.append('text')
             .attr('x', (width - margin.left - margin.right) / 2)
-            .attr('y', -10)
+            .attr('y', -25)
             .attr('text-anchor', 'middle')
-            .style('font-size', '20px')
+            .style('font-size', '18px')
             .style('font-weight', 'bold')
-            .text('Three lines of the highest proportion in causes of death');
+            .text('Trends in Leading Causes of Child Mortality in Vietnam, 2000-2022');
     }, [data, margin.bottom, margin.left, margin.right, margin.top]);
 
     return (

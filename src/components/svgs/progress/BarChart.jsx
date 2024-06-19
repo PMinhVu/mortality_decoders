@@ -241,12 +241,20 @@ const BarChart = () => {
 
                 // Add chart title
                 svg.append('text')
-                    .attr('x', width / 2.3)
-                    .attr('y', margin.top / 2)
+                    .attr('x', width / 2.4)
+                    .attr('y', margin.top / 4)
                     .attr('text-anchor', 'middle')
-                    .attr('font-size', '20px')
+                    .attr('font-size', '18px')
                     .attr('font-weight', 'bold')
-                    .text('Mortality Rate Comparison (1990, 2000, 2010, 2020)');
+                    .text('Comparative Mortality Rates and Percentage Change');
+
+                svg.append('text')
+                    .attr('x', width / 2.4)
+                    .attr('y', margin.top / 5 + 25)
+                    .attr('text-anchor', 'middle')
+                    .attr('font-size', '18px')
+                    .attr('font-weight', 'bold')
+                    .text('in East Asia and Pacific, Vietnam, and the World (1990-2020)');
 
                 // Add y-axis label
                 svg.append('text')

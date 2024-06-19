@@ -54,7 +54,7 @@ const Sidebar = () => {
             </div>
             <h4>
                 @copyrighted by <br />
-                <b>DSDV Team</b>
+                <b>Mortality Decoders</b>
             </h4>
         </div>
     );

@@ -171,7 +171,8 @@ const PlainWorldMap = ({ country, year, indicator }) => {
     }, [year, indicator, country]); // Dependency array to re-run effect on change
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
+            <h2>World Map of Mortality Rates by Age Groups (2012-2022)</h2>
             <div style={{ border: '2px solid #000', borderRadius: '10px' }}>
                 <svg ref={svgRef}></svg>
             </div>

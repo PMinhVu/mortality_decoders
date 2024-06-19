@@ -8,7 +8,7 @@ const TimeSeriesChart = () => {
         const svg = d3.select(svgRef.current);
         svg.selectAll('*').remove();
 
-        const width = 500;
+        const width = 550;
         const height = 550;
         const margin = { top: 50, right: 30, bottom: 70, left: 50 };
 
@@ -201,7 +201,7 @@ const TimeSeriesChart = () => {
                 const legend = svg
                     .append('g')
                     .attr('class', 'legend')
-                    .attr('transform', `translate(${width - margin.right - 150}, ${margin.top})`);
+                    .attr('transform', `translate(${width - margin.right - 180}, ${margin.top})`);
 
                 indicatorOrder.forEach((indicator, index) => {
                     const legendRow = legend.append('g').attr('transform', `translate(0, ${index * 20})`);
@@ -237,13 +237,14 @@ const TimeSeriesChart = () => {
                     .attr('font-weight', 'bold')
                     .text('Values');
 
-                svg.append('text')
-                    .attr('x', width / 2)
+                svg
+                    .append('text')
+                    .attr('x', width / 2.25)
                     .attr('y', margin.top / 2)
                     .attr('text-anchor', 'middle')
-                    .attr('font-size', '20px')
+                    .attr('font-size', '16px')
                     .attr('font-weight', 'bold')
-                    .text(`Time Series Data for Viet Nam`);
+                    .text(`Trends in Age-Specific Child Mortality Rates in Vietnam (1990-2022)`);
             })
             .catch((error) => {
                 console.error('Error loading or parsing data:', error);
@@ -252,7 +253,7 @@ const TimeSeriesChart = () => {
 
     return (
         <div>
-            <svg ref={svgRef} width={500} height={550}></svg>
+            <svg ref={svgRef} width={550} height={550}></svg>
         </div>
     );
 };

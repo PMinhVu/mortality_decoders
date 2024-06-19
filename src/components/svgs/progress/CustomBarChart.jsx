@@ -184,11 +184,22 @@ const CustomBarChart = () => {
                 // Add chart title
                 svg.append('text')
                     .attr('x', width / 2)
-                    .attr('y', margin.top / 2)
+                    .attr('y', margin.top / 4)
                     .attr('text-anchor', 'middle')
-                    .attr('font-size', '20px')
+                    .attr('font-size', '18px')
                     .attr('font-weight', 'bold')
-                    .text('Comparison of Mortality Rates for the Two Age Groups with the Highest Rates');
+                    .text(
+                        'Comparative Neonatal and Post-Neonatal Mortality Rates',
+                    );
+                svg.append('text')
+                    .attr('x', width / 2)
+                    .attr('y', margin.top / 4 + 25)
+                    .attr('text-anchor', 'middle')
+                    .attr('font-size', '18px')
+                    .attr('font-weight', 'bold')
+                    .text(
+                        'in Vietnam, East Asia and Pacific, and Worldwide',
+                    );
 
                 // Add y-axis label
                 svg.append('text')
