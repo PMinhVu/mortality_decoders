@@ -10,14 +10,14 @@ const PlainWorldMap = ({ country, year, indicator }) => {
 
     useEffect(() => {
         const svg = d3.select(svgRef.current);
-        const width = 800;
-        const height = 500;
+        const width = 850;
+        const height = 600;
         svg.attr('width', width).attr('height', height);
 
         // Projection and path generator setup
         const projection = d3
             .geoMercator()
-            .scale(90)
+            .scale(110)
             .center([0, 20])
             .translate([width / 1.85, height / 2]);
         const pathGenerator = d3.geoPath().projection(projection);

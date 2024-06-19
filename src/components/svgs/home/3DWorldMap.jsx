@@ -14,7 +14,7 @@ const SphereWorldMap = ({ country, year, indicator }) => {
 
     useEffect(() => {
         const svg = d3.select(svgRef.current);
-        const width = 800;
+        const width = 850;
         const height = 550;
         let isRotating = false;
 

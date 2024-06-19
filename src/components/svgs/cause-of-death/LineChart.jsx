@@ -46,7 +46,10 @@ const LineChart = () => {
             .nice()
             .range([height - margin.top - margin.bottom, 0]);
 
-        const color = d3.scaleOrdinal(d3.schemeCategory10);
+        const color = d3
+            .scaleOrdinal()
+            .domain(['Cause 1', 'Cause 2', 'Cause 3'])
+            .range(['#1f77b4', '#ff7f0e', '#2ca02c']);
 
         const topCauses = Array.from(
             d3.group(data, (d) => d.cause),

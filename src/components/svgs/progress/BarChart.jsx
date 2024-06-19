@@ -166,7 +166,7 @@ const BarChart = () => {
 
                 annotationGroups
                     .append('rect')
-                    .attr('x', -15)
+                    .attr('x', -10)
                     .attr('y', (d) => y(d.previousValue) - 30)
                     .attr('width', 50)
                     .attr('height', 20)
@@ -176,7 +176,7 @@ const BarChart = () => {
 
                 annotationGroups
                     .append('text')
-                    .attr('x', 10)
+                    .attr('x', 15)
                     .attr('y', (d) => y(d.previousValue) - 10)
                     .attr('dy', '-0.5em')
                     .attr('text-anchor', 'middle')
@@ -241,7 +241,7 @@ const BarChart = () => {
 
                 // Add chart title
                 svg.append('text')
-                    .attr('x', width / 2)
+                    .attr('x', width / 2.3)
                     .attr('y', margin.top / 2)
                     .attr('text-anchor', 'middle')
                     .attr('font-size', '20px')
