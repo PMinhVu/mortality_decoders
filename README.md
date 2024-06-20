@@ -27,8 +27,8 @@
 |  1  |  Hoang Tuan Kiet   | ITDSIU21055  | ITDSIU21055@student.hcmiu.edu.vn |     [meiskiet](https://github.com/meiskiet)     |   **TEAM LEADER** with Data Processing and Storytelling, Video Designer   |     20%      |
 |  2  |   Nguyen Hai Ngoc    | ITDSIU21057  | ITDSIU21057@student.hcmiu.edu.vn |    [haingocnguyen](https://github.com/haingocnguyen)    |              Data Processing and Storytelling, Report Constructing              |     20%      |
 |  3  | Phan Quoc Anh | ITDSIU21001  | ITDSIU21001@student.hcmiu.edu.vn |     [quocanhphan](https://github.com/quocanhphan)     | Data Processing and Storytelling, Script Constructing|     20%      |
-|  4  |    Nguyen Luan Cong Bang     | ITITIU20163  | ITITIU20163@student.hcmiu.edu.vn |      [congbangitiu](https://github.com/congbangitiu)      |          Web Desiging and Data Visualization           |     20%      |
-|  5  |    Pham Minh Vu     | ITITIU20354  | ITITIU20354@student.hcmiu.edu.vn | [PMinhVu](https://github.com/PMinhVu) | Web Desiging and Data Visualization |     20%      |
+|  4  |    Nguyen Luan Cong Bang     | ITITIU20163  | ITITIU20163@student.hcmiu.edu.vn |      [congbangitiu](https://github.com/congbangitiu)      |          Web Designing and Data Visualization           |     20%      |
+|  5  |    Pham Minh Vu     | ITITIU20354  | ITITIU20354@student.hcmiu.edu.vn | [PMinhVu](https://github.com/PMinhVu) | Web Designing and Data Visualization |     20%      |
 
 ## 2. The project we are working on
 
