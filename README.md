@@ -114,13 +114,13 @@ Our data is structured into four distinct parts, each tailored to specific aspec
 
 Datasets of 4 parts mostly contain non-null values. While there are still some null value records, all of them are presented in the worthless attributes, which can be ignored. The figure below is an typical example for the general case:
 
-![alt text](src\assets\images\image.png)
+![alt text](src/assets/images/image.png)
 
 # STORY-TELLING
 
 ## 1. World Map
 
-![alt text](src\assets\images\image1.png)
+![alt text](src/assets/images/image1.png)
 
 This world map provides a comprehensive view of child mortality rates from 2012 to 2022. Each country is shaded according to its mortality rate, with darker colors indicating higher rates and lighter colors indicating lower rates.
 
@@ -128,11 +128,11 @@ Next, we have a 3D map showing child mortality rates across five age groups. The
 These world maps help us quickly understand the distribution and severity of child mortality across the globe.
 
 
-![alt text](src\assets\images\image2.png)
+![alt text](src/assets/images/image2.png)
 
 ## 2. Mortality Insights
 
-![alt text](src\assets\images\image3.png)
+![alt text](src/assets/images/image3.png)
 
 This part presents a detailed view of age-specific child mortality trends in Vietnam from 1990 to 2022. This graph provides a snapshot of the current state of mortality in Vietnam, highlighting which age groups are most affected over this period.
 As we can see, the mortality rates for neonatal and younger age groups have seen significant declines over the past three decades. This visualization allows us to observe how healthcare improvements have impacted different age groups, particularly the youngest children.
@@ -144,7 +144,7 @@ Let’s group the neonatal and age 1-4 mortality rates into under 5 age groups t
 
 ## 3. Cause of Death
 
-![alt text](src\assets\images\image4.png)
+![alt text](src/assets/images/image4.png)
 
 This provides an overview of the causes of death for children under five in Vietnam in 2022. The pie chart shows that prematurity (23%) and congenital anomalies (20.6%) are the leading causes, followed by lower respiratory infections and asphyxia. This helps us identify key health issues to address.
 
@@ -152,7 +152,7 @@ The line graph tracks the three leading causes of death over time. It shows a gr
 
 ## 4. Comparative Analysis
 
-![alt text](src\assets\images\image5.png)
+![alt text](src/assets/images/image5.png)
 
 The last part presents a comparative analysis of child mortality rates across different regions and time periods. On the left, the bar graph compares mortality rates in 1990, 2000, 2010, and 2020 for East Asia and Pacific, Vietnam, and the world. The percentage change is indicated by small boxes above each bar.
 
@@ -232,7 +232,7 @@ Next, the dot graph compares neonatal and under-five mortality rates across Viet
 
 # DEMO - RESULT
 
-![alt text](src\assets\images\image6.png)
+![alt text](src/assets/images/image6.png)
 
 <!-- CONTRIBUTING -->
 
