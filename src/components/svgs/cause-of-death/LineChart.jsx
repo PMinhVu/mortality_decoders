@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState} from 'react';
+import CauseOfDeathData from '@assets/data/Cause_Of_Death_In_Period_Years.csv';
 import * as d3 from 'd3';
 
 const LineChart = () => {
@@ -8,24 +9,20 @@ const LineChart = () => {
         height = 500;
     const margin = { top: 50, right: 100, bottom: 100, left: 60 }; // Adjusted top margin for the title
 
-    useEffect(() => {
-        d3.csv('src/assets/data/Cause_Of_Death_In_Period_Years.csv')
-            .then((parsedData) => {
-                const formattedData = parsedData.map((d) => ({
-                    cause: d.CAUSE_OF_DEATH,
-                    year: +d.TIME_PERIOD,
-                    deaths: +d.OBS_VALUE,
-                }));
-                setData(formattedData);
-            })
-            .catch((error) => {
-                console.error('Error loading or parsing data:', error);
-            });
-    }, []);
+    //console.log(CauseOfDeathData)
 
+    useEffect(() => {
+        const formattedData = CauseOfDeathData.map((d) => ({
+            cause: d.CAUSE_OF_DEATH,
+            year: +d.TIME_PERIOD,
+            deaths: +d.OBS_VALUE,
+        }));
+        setData(formattedData);
+    }, []);
+    
     useEffect(() => {
         if (data.length === 0) return;
-
+        
         const svg = d3
             .select(ref.current)
             .attr('width', width)

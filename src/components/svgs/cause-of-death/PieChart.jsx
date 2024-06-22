@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import VietNamCauseOfDeathData from '../../../assets/data/VietNam_Cause_Of_Death_Under_Five_2021.csv';
 import * as d3 from 'd3';
 
 const PieChart = () => {
@@ -8,32 +9,27 @@ const PieChart = () => {
         height = 400;
     const radius = Math.min(width, height) / 2.5;
 
+    
+
+
     useEffect(() => {
-        d3.csv('src/assets/data/VietNam_Cause_Of_Death_Under_Five_2021.csv')
-            .then((parsedData) => {
-                const newData = parsedData
-                    .filter((d) => d.CAUSE_OF_DEATH && d.PROPORTION)
-                    .map((d) => {
-                        const value = parseFloat(d.PROPORTION.replace('%', ''));
-                        return {
-                            label: d.CAUSE_OF_DEATH,
-                            value: isNaN(value) ? 0 : value,
-                        };
-                    })
-                    .filter((d) => d.value >= 0);
+        // Directly use the imported CSV data
+        const formattedData = VietNamCauseOfDeathData.map((d) => ({
+            label: d.CAUSE_OF_DEATH,
+            value: parseFloat(d.PROPORTION.replace('%', '')),
+        }))
+        .filter((d) => d.label && !isNaN(d.value) && d.value >= 0);
 
-                // Sort data by value in ascending order
-                newData.sort((a, b) => a.value - b.value);
+        // Sort data by value in ascending order
+        formattedData.sort((a, b) => a.value - b.value);
 
-                setData(newData);
-            })
-            .catch((error) => {
-                console.error('Error loading or parsing data:', error);
-            });
-    }, [setData]);
+        setData(formattedData);
+    }, []);
 
     useEffect(() => {
         if (data.length === 0) return;
+
+
 
         const svg = d3.select(ref.current).attr('width', width).attr('height', height);
 

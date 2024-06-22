@@ -12814,7 +12814,7 @@ var worldData = {
         },
         {
             type: 'Feature',
-            properties: { name: 'Vietnam' },
+            properties: { name: 'VietNam' },
             geometry: {
                 type: 'Polygon',
                 coordinates: [
