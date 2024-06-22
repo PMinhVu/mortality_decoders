@@ -114,7 +114,7 @@ const PlainWorldMap = ({ country, year, indicator }) => {
 
         // Attach zoom to Vietnam functionality
         d3.select('#zoom-to-vietnam').on('click', () => {
-            zoomToCountry('Vietnam');
+            zoomToCountry('VietNam');
         });
 
         // Attach zoom to selected country functionality

@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './index.module.scss';
 import SphereWorldMap from '@components/svgs/home/3DWorldMap.jsx';
 import PlainWorldMap from '@components/svgs/home/2DWorldMap.jsx';
-import * as d3 from 'd3';
+import CountryVariables from '@assets/data/world';
 
 const cx = classNames.bind(styles);
 
@@ -68,11 +68,9 @@ const Home = () => {
     };
 
     useEffect(() => {
-        d3.json('src/assets/data/world.geojson').then((geojson) => {
-            const uniqueCountries = Array.from(new Set(geojson.features.map((d) => d.properties.name)));
+            const uniqueCountries = Array.from(new Set(CountryVariables.features.map((d) => d.properties.name)));
             const sortedCountries = uniqueCountries.sort((a, b) => a.localeCompare(b));
             setCountries(sortedCountries);
-        });
     }, []);
 
     return (
